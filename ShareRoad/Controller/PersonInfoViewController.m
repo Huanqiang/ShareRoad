@@ -27,6 +27,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self->keyboardSize.height = 216;
+    self->textFieldArr = @[personNameTextField, personPhoneTextField, personAddressTextField];
+    [self setCustomKeyboard:self];
+    
     [self setBtnCircleBead:saveOrLogOutBtn];
     [self setViewCircleBead:personNameView];
     [self setViewCircleBead:personAddressView];    
@@ -49,6 +53,7 @@
 */
 
 - (IBAction)selectedSex:(id)sender {
+
 }
 
 - (IBAction)modifyPersonInfo:(id)sender {
@@ -59,4 +64,5 @@
 
 - (IBAction)saveOrLogOut:(id)sender {
 }
+
 @end

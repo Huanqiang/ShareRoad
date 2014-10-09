@@ -90,6 +90,8 @@
 		E67ED8FC19E5607B00E78EA8 /* libPushSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E67ED8FB19E5607B00E78EA8 /* libPushSDK.a */; };
 		E67ED90119E5633300E78EA8 /* RoadMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E67ED90019E5633300E78EA8 /* RoadMapViewController.m */; };
 		E67ED90619E5638500E78EA8 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E67ED90519E5638500E78EA8 /* SettingViewController.m */; };
+		E69806D619E6B4DF00B441D7 /* CustomToolClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E69806D519E6B4DF00B441D7 /* CustomToolClass.m */; };
+		E69806D919E6B4F100B441D7 /* WebServiceClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E69806D819E6B4F100B441D7 /* WebServiceClass.m */; };
 		E6E7F8A819E6630900CF9510 /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E7F8A719E6630900CF9510 /* AboutUsViewController.m */; };
 		E6E7F8AE19E6633700CF9510 /* AddressShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E7F8AD19E6633700CF9510 /* AddressShareViewController.m */; };
 		E6E7F8B119E6635200CF9510 /* MoreShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E7F8B019E6635200CF9510 /* MoreShareViewController.m */; };
@@ -201,6 +203,10 @@
 		E67ED90019E5633300E78EA8 /* RoadMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoadMapViewController.m; sourceTree = "<group>"; };
 		E67ED90419E5638500E78EA8 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		E67ED90519E5638500E78EA8 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		E69806D419E6B4DF00B441D7 /* CustomToolClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomToolClass.h; path = AdditionFunction/CustomToolClass/CustomToolClass.h; sourceTree = SOURCE_ROOT; };
+		E69806D519E6B4DF00B441D7 /* CustomToolClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomToolClass.m; path = AdditionFunction/CustomToolClass/CustomToolClass.m; sourceTree = SOURCE_ROOT; };
+		E69806D719E6B4F100B441D7 /* WebServiceClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebServiceClass.h; path = AdditionFunction/WebServiceClass/WebServiceClass.h; sourceTree = SOURCE_ROOT; };
+		E69806D819E6B4F100B441D7 /* WebServiceClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebServiceClass.m; path = AdditionFunction/WebServiceClass/WebServiceClass.m; sourceTree = SOURCE_ROOT; };
 		E6E7F8A619E6630900CF9510 /* AboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutUsViewController.h; path = Controller/AboutUsViewController.h; sourceTree = "<group>"; };
 		E6E7F8A719E6630900CF9510 /* AboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutUsViewController.m; path = Controller/AboutUsViewController.m; sourceTree = "<group>"; };
 		E6E7F8AC19E6633700CF9510 /* AddressShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddressShareViewController.h; path = Controller/AddressShareViewController.h; sourceTree = "<group>"; };
@@ -418,6 +424,8 @@
 		E67ED8F819E55F9200E78EA8 /* AdditionFunction */ = {
 			isa = PBXGroup;
 			children = (
+				E69806DB19E6B51700B441D7 /* CustomToolClass */,
+				E69806DA19E6B50100B441D7 /* WebService */,
 				E67ED8F919E5602600E78EA8 /* JPush */,
 			);
 			name = AdditionFunction;
@@ -480,6 +488,24 @@
 				E67ED90519E5638500E78EA8 /* SettingViewController.m */,
 			);
 			name = Setting;
+			sourceTree = "<group>";
+		};
+		E69806DA19E6B50100B441D7 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				E69806D719E6B4F100B441D7 /* WebServiceClass.h */,
+				E69806D819E6B4F100B441D7 /* WebServiceClass.m */,
+			);
+			name = WebService;
+			sourceTree = "<group>";
+		};
+		E69806DB19E6B51700B441D7 /* CustomToolClass */ = {
+			isa = PBXGroup;
+			children = (
+				E69806D419E6B4DF00B441D7 /* CustomToolClass.h */,
+				E69806D519E6B4DF00B441D7 /* CustomToolClass.m */,
+			);
+			name = CustomToolClass;
 			sourceTree = "<group>";
 		};
 		E6E7F89919E6617500CF9510 /* PersonInfo */ = {
@@ -728,11 +754,13 @@
 				E6E7F8B819E663A500CF9510 /* LogInViewController.m in Sources */,
 				E6E7F8B119E6635200CF9510 /* MoreShareViewController.m in Sources */,
 				E6E7F8BE19E663D300CF9510 /* RegisteredViewController.m in Sources */,
+				E69806D919E6B4F100B441D7 /* WebServiceClass.m in Sources */,
 				E67ED83719E55B3A00E78EA8 /* main.m in Sources */,
 				E6E7F8A819E6630900CF9510 /* AboutUsViewController.m in Sources */,
 				E67ED90119E5633300E78EA8 /* RoadMapViewController.m in Sources */,
 				E67ED90619E5638500E78EA8 /* SettingViewController.m in Sources */,
 				E6E7F8AE19E6633700CF9510 /* AddressShareViewController.m in Sources */,
+				E69806D619E6B4DF00B441D7 /* CustomToolClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
