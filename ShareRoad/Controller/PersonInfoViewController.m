@@ -37,6 +37,34 @@
     [self setViewCircleBead:personPhoneView];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    //读取文本信息，判断有无用户头像、姓名、性别、手机号、所在地；
+    NSString *personName = [[LogInToolClass shareInstance] getUserInfo:@"personName"];
+    if (![personName isEqualToString:@"0"]) {
+        personNameTextField.text = personName;
+        personNameLabel.text = personName;
+    };
+    
+    [self setPersonInfo:@"personPhone" textField:personPhoneTextField];
+    [self setPersonInfo:@"personAddress" textField:personAddressTextField];
+    
+    [[LogInToolClass shareInstance] getUserInfo:@"personIcon"];
+    
+    
+    [[LogInToolClass shareInstance] getUserInfo:@"personSex"];
+    [[LogInToolClass shareInstance] getUserInfo:@"personPhone"];
+    [[LogInToolClass shareInstance] getUserInfo:@"personAddress"];
+}
+
+- (void)setPersonInfo:(NSString *)personType textField:(UITextField *)textField {
+    NSString *personName = [[LogInToolClass shareInstance] getUserInfo:personType];
+    if (![personName isEqualToString:@"0"]) {
+        textField.text = personName;
+    };
+}
+
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

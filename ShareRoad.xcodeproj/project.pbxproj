@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E6783E4919E6C7C2007DF9A2 /* HUD_NO.png in Resources */ = {isa = PBXBuildFile; fileRef = E6783E3A19E6C7C2007DF9A2 /* HUD_NO.png */; };
+		E6783E4A19E6C7C2007DF9A2 /* HUD_NO@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6783E3B19E6C7C2007DF9A2 /* HUD_NO@2x.png */; };
+		E6783E4B19E6C7C2007DF9A2 /* HUD_YES.png in Resources */ = {isa = PBXBuildFile; fileRef = E6783E3C19E6C7C2007DF9A2 /* HUD_YES.png */; };
+		E6783E4C19E6C7C2007DF9A2 /* HUD_YES@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6783E3D19E6C7C2007DF9A2 /* HUD_YES@2x.png */; };
+		E6783E4D19E6C7C2007DF9A2 /* UIWindow+YzdHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E6783E3F19E6C7C2007DF9A2 /* UIWindow+YzdHUD.m */; };
+		E6783E4E19E6C7C2007DF9A2 /* YzdHUDBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6783E4119E6C7C2007DF9A2 /* YzdHUDBackgroundView.m */; };
+		E6783E4F19E6C7C2007DF9A2 /* YzdHUDImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6783E4319E6C7C2007DF9A2 /* YzdHUDImageView.m */; };
+		E6783E5019E6C7C2007DF9A2 /* YzdHUDIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = E6783E4519E6C7C2007DF9A2 /* YzdHUDIndicator.m */; };
+		E6783E5119E6C7C2007DF9A2 /* YzdHUDLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E6783E4719E6C7C2007DF9A2 /* YzdHUDLabel.m */; };
+		E6783E5619E6CAF3007DF9A2 /* LogInToolClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E6783E5519E6CAF3007DF9A2 /* LogInToolClass.m */; };
 		E67ED83719E55B3A00E78EA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E67ED83619E55B3A00E78EA8 /* main.m */; };
 		E67ED83A19E55B3A00E78EA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E67ED83919E55B3A00E78EA8 /* AppDelegate.m */; };
 		E67ED84319E55B3A00E78EA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E67ED84119E55B3A00E78EA8 /* Main.storyboard */; };
@@ -112,6 +122,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E6783E3A19E6C7C2007DF9A2 /* HUD_NO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HUD_NO.png; sourceTree = "<group>"; };
+		E6783E3B19E6C7C2007DF9A2 /* HUD_NO@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HUD_NO@2x.png"; sourceTree = "<group>"; };
+		E6783E3C19E6C7C2007DF9A2 /* HUD_YES.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HUD_YES.png; sourceTree = "<group>"; };
+		E6783E3D19E6C7C2007DF9A2 /* HUD_YES@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HUD_YES@2x.png"; sourceTree = "<group>"; };
+		E6783E3E19E6C7C2007DF9A2 /* UIWindow+YzdHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+YzdHUD.h"; sourceTree = "<group>"; };
+		E6783E3F19E6C7C2007DF9A2 /* UIWindow+YzdHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+YzdHUD.m"; sourceTree = "<group>"; };
+		E6783E4019E6C7C2007DF9A2 /* YzdHUDBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YzdHUDBackgroundView.h; sourceTree = "<group>"; };
+		E6783E4119E6C7C2007DF9A2 /* YzdHUDBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YzdHUDBackgroundView.m; sourceTree = "<group>"; };
+		E6783E4219E6C7C2007DF9A2 /* YzdHUDImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YzdHUDImageView.h; sourceTree = "<group>"; };
+		E6783E4319E6C7C2007DF9A2 /* YzdHUDImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YzdHUDImageView.m; sourceTree = "<group>"; };
+		E6783E4419E6C7C2007DF9A2 /* YzdHUDIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YzdHUDIndicator.h; sourceTree = "<group>"; };
+		E6783E4519E6C7C2007DF9A2 /* YzdHUDIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YzdHUDIndicator.m; sourceTree = "<group>"; };
+		E6783E4619E6C7C2007DF9A2 /* YzdHUDLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YzdHUDLabel.h; sourceTree = "<group>"; };
+		E6783E4719E6C7C2007DF9A2 /* YzdHUDLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YzdHUDLabel.m; sourceTree = "<group>"; };
+		E6783E5419E6CAF3007DF9A2 /* LogInToolClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInToolClass.h; sourceTree = "<group>"; };
+		E6783E5519E6CAF3007DF9A2 /* LogInToolClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInToolClass.m; sourceTree = "<group>"; };
 		E67ED83119E55B3A00E78EA8 /* ShareRoad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareRoad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67ED83519E55B3A00E78EA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E67ED83619E55B3A00E78EA8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -242,6 +268,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E6783E3919E6C7C2007DF9A2 /* YzdHUD */ = {
+			isa = PBXGroup;
+			children = (
+				E6783E3A19E6C7C2007DF9A2 /* HUD_NO.png */,
+				E6783E3B19E6C7C2007DF9A2 /* HUD_NO@2x.png */,
+				E6783E3C19E6C7C2007DF9A2 /* HUD_YES.png */,
+				E6783E3D19E6C7C2007DF9A2 /* HUD_YES@2x.png */,
+				E6783E3E19E6C7C2007DF9A2 /* UIWindow+YzdHUD.h */,
+				E6783E3F19E6C7C2007DF9A2 /* UIWindow+YzdHUD.m */,
+				E6783E4019E6C7C2007DF9A2 /* YzdHUDBackgroundView.h */,
+				E6783E4119E6C7C2007DF9A2 /* YzdHUDBackgroundView.m */,
+				E6783E4219E6C7C2007DF9A2 /* YzdHUDImageView.h */,
+				E6783E4319E6C7C2007DF9A2 /* YzdHUDImageView.m */,
+				E6783E4419E6C7C2007DF9A2 /* YzdHUDIndicator.h */,
+				E6783E4519E6C7C2007DF9A2 /* YzdHUDIndicator.m */,
+				E6783E4619E6C7C2007DF9A2 /* YzdHUDLabel.h */,
+				E6783E4719E6C7C2007DF9A2 /* YzdHUDLabel.m */,
+			);
+			name = YzdHUD;
+			path = AdditionFunction/YzdHUD;
+			sourceTree = SOURCE_ROOT;
+		};
+		E6783E5319E6CAF3007DF9A2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E6783E5419E6CAF3007DF9A2 /* LogInToolClass.h */,
+				E6783E5519E6CAF3007DF9A2 /* LogInToolClass.m */,
+			);
+			name = Login;
+			path = AdditionFunction/Login;
+			sourceTree = SOURCE_ROOT;
+		};
 		E67ED82819E55B3A00E78EA8 = {
 			isa = PBXGroup;
 			children = (
@@ -424,6 +482,8 @@
 		E67ED8F819E55F9200E78EA8 /* AdditionFunction */ = {
 			isa = PBXGroup;
 			children = (
+				E6783E5319E6CAF3007DF9A2 /* Login */,
+				E6783E3919E6C7C2007DF9A2 /* YzdHUD */,
 				E69806DB19E6B51700B441D7 /* CustomToolClass */,
 				E69806DA19E6B50100B441D7 /* WebService */,
 				E67ED8F919E5602600E78EA8 /* JPush */,
@@ -656,6 +716,7 @@
 			files = (
 				E67ED89B19E55EBB00E78EA8 /* Map_showRoadPicture.png in Resources */,
 				E67ED87B19E55E7500E78EA8 /* Icon.png in Resources */,
+				E6783E4A19E6C7C2007DF9A2 /* HUD_NO@2x.png in Resources */,
 				E67ED8F219E55F5400E78EA8 /* Speak_Voice4@2x.png in Resources */,
 				E67ED8B319E55EFF00E78EA8 /* tab_Map.png in Resources */,
 				E67ED87C19E55E7500E78EA8 /* Icon@2x.png in Resources */,
@@ -666,6 +727,7 @@
 				E67ED8EC19E55F5400E78EA8 /* Speak_Voice1@2x.png in Resources */,
 				E67ED87419E55E7500E78EA8 /* alert_close.png in Resources */,
 				E67ED89519E55EBB00E78EA8 /* Map_AnnotationPicture.png in Resources */,
+				E6783E4919E6C7C2007DF9A2 /* HUD_NO.png in Resources */,
 				E67ED8D019E55F2000E78EA8 /* Person_Top@2x.png in Resources */,
 				E67ED8CC19E55F2000E78EA8 /* Person_SexBoy@2x.png in Resources */,
 				E67ED86E19E55E7500E78EA8 /* launch_1242.png in Resources */,
@@ -715,6 +777,7 @@
 				E67ED8CD19E55F2000E78EA8 /* Person_SexGirl.png in Resources */,
 				E67ED8A619E55EBB00E78EA8 /* Map_Following@2x.png in Resources */,
 				E67ED8A019E55EBB00E78EA8 /* satellite.png in Resources */,
+				E6783E4B19E6C7C2007DF9A2 /* HUD_YES.png in Resources */,
 				E67ED89F19E55EBB00E78EA8 /* 2dpicture.png in Resources */,
 				E67ED8C919E55F2000E78EA8 /* Person_ModifyInfo.png in Resources */,
 				E67ED8DD19E55F3400E78EA8 /* Login_background@2x.png in Resources */,
@@ -726,6 +789,7 @@
 				E67ED8AA19E55EBB00E78EA8 /* Map_showTrafficOn@2x.png in Resources */,
 				E67ED8DC19E55F3400E78EA8 /* Login_background.png in Resources */,
 				E67ED87A19E55E7500E78EA8 /* Icon-Small@2x.png in Resources */,
+				E6783E4C19E6C7C2007DF9A2 /* HUD_YES@2x.png in Resources */,
 				E67ED87D19E55E7500E78EA8 /* 红绿灯.png in Resources */,
 				E67ED87519E55E7500E78EA8 /* alert_tButton.png in Resources */,
 				E67ED86F19E55E7500E78EA8 /* launch_750.png in Resources */,
@@ -748,12 +812,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6783E4E19E6C7C2007DF9A2 /* YzdHUDBackgroundView.m in Sources */,
 				E67ED83A19E55B3A00E78EA8 /* AppDelegate.m in Sources */,
+				E6783E4F19E6C7C2007DF9A2 /* YzdHUDImageView.m in Sources */,
 				E6E7F8B419E6636700CF9510 /* PersonInfoViewController.m in Sources */,
 				E6E7F8C119E6691000CF9510 /* BaseViewController.m in Sources */,
+				E6783E5619E6CAF3007DF9A2 /* LogInToolClass.m in Sources */,
 				E6E7F8B819E663A500CF9510 /* LogInViewController.m in Sources */,
 				E6E7F8B119E6635200CF9510 /* MoreShareViewController.m in Sources */,
+				E6783E4D19E6C7C2007DF9A2 /* UIWindow+YzdHUD.m in Sources */,
 				E6E7F8BE19E663D300CF9510 /* RegisteredViewController.m in Sources */,
+				E6783E5019E6C7C2007DF9A2 /* YzdHUDIndicator.m in Sources */,
+				E6783E5119E6C7C2007DF9A2 /* YzdHUDLabel.m in Sources */,
 				E69806D919E6B4F100B441D7 /* WebServiceClass.m in Sources */,
 				E67ED83719E55B3A00E78EA8 /* main.m in Sources */,
 				E6E7F8A819E6630900CF9510 /* AboutUsViewController.m in Sources */,

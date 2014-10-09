@@ -52,11 +52,11 @@
 
 
 #pragma mark - 网络操作
-
-- (void)webServiceWithNet {
-
+- (void)webServiceWithNet:(NSString *)wsName webServiceParmeters:(NSMutableArray *)wsParmeters success:(void(^)(NSDictionary *dic)) success failure:(void(^)(NSError *error)) failure {
     
-//    [[WebServiceClass shareInstance] createAsynchronousRequestWithWebService:WebServiceURL webServiceFile:WebServiceFile xmlNameSpace:WebServiceXmlNameSpace webServiceName:<#(NSString *)#> wsParameters:<#(NSMutableArray *)#> success:<#^(NSDictionary *dic)success#> failure:<#^(NSError *error)failure#>]
+    [[WebServiceClass shareInstance] createAsynchronousRequestWithWebService:WebServiceURL webServiceFile:WebServiceFile xmlNameSpace:WebServiceXmlNameSpace webServiceName:wsName wsParameters:wsParmeters success:success failure:^(NSError *error){
+        [self.view.window showHUDWithText:@"网络错误..." Type:ShowPhotoNo Enabled:YES];
+    }];
 }
 
 

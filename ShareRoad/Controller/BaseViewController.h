@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "WebServiceClass.h"
+#import "UIWindow+YzdHUD.h"
+#import "LogInToolClass.h"
 
 @interface BaseViewController : UIViewController<UITextFieldDelegate> {
     CGSize keyboardSize;
@@ -17,6 +19,9 @@
 #pragma mark - 设置圆角
 - (void)setViewCircleBead:(UIView *)senderView;
 - (void)setBtnCircleBead:(UIButton *)senderBtn;
+
+#pragma mark - 网络操作
+- (void)webServiceWithNet:(NSString *)wsName webServiceParmeters:(NSMutableArray *)wsParmeters success:(void(^)(NSDictionary *dic)) success failure:(void(^)(NSError *error)) failure;
 
 #pragma mark - 键盘操作
 - (void)setCustomKeyboard:(id)delegate;
