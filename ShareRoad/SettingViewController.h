@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PersonInfoViewController.h"
+#import "AddressShareViewController.h"
+#import "MoreShareViewController.h"
+#import "AboutUsViewController.h"
 
-@interface SettingViewController : UIViewController
+@interface SettingViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+@property (strong, nonatomic) IBOutlet UITableView *mainTableView;
 
 @end

@@ -90,6 +90,13 @@
 		E67ED8FC19E5607B00E78EA8 /* libPushSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E67ED8FB19E5607B00E78EA8 /* libPushSDK.a */; };
 		E67ED90119E5633300E78EA8 /* RoadMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E67ED90019E5633300E78EA8 /* RoadMapViewController.m */; };
 		E67ED90619E5638500E78EA8 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E67ED90519E5638500E78EA8 /* SettingViewController.m */; };
+		E6E7F8A819E6630900CF9510 /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E7F8A719E6630900CF9510 /* AboutUsViewController.m */; };
+		E6E7F8AE19E6633700CF9510 /* AddressShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E7F8AD19E6633700CF9510 /* AddressShareViewController.m */; };
+		E6E7F8B119E6635200CF9510 /* MoreShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E7F8B019E6635200CF9510 /* MoreShareViewController.m */; };
+		E6E7F8B419E6636700CF9510 /* PersonInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E7F8B319E6636700CF9510 /* PersonInfoViewController.m */; };
+		E6E7F8B819E663A500CF9510 /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E7F8B719E663A500CF9510 /* LogInViewController.m */; };
+		E6E7F8BE19E663D300CF9510 /* RegisteredViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E7F8BD19E663D300CF9510 /* RegisteredViewController.m */; };
+		E6E7F8C119E6691000CF9510 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E7F8C019E6691000CF9510 /* BaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -194,6 +201,20 @@
 		E67ED90019E5633300E78EA8 /* RoadMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoadMapViewController.m; sourceTree = "<group>"; };
 		E67ED90419E5638500E78EA8 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		E67ED90519E5638500E78EA8 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		E6E7F8A619E6630900CF9510 /* AboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutUsViewController.h; path = Controller/AboutUsViewController.h; sourceTree = "<group>"; };
+		E6E7F8A719E6630900CF9510 /* AboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutUsViewController.m; path = Controller/AboutUsViewController.m; sourceTree = "<group>"; };
+		E6E7F8AC19E6633700CF9510 /* AddressShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddressShareViewController.h; path = Controller/AddressShareViewController.h; sourceTree = "<group>"; };
+		E6E7F8AD19E6633700CF9510 /* AddressShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddressShareViewController.m; path = Controller/AddressShareViewController.m; sourceTree = "<group>"; };
+		E6E7F8AF19E6635200CF9510 /* MoreShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoreShareViewController.h; path = Controller/MoreShareViewController.h; sourceTree = "<group>"; };
+		E6E7F8B019E6635200CF9510 /* MoreShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoreShareViewController.m; path = Controller/MoreShareViewController.m; sourceTree = "<group>"; };
+		E6E7F8B219E6636700CF9510 /* PersonInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PersonInfoViewController.h; path = Controller/PersonInfoViewController.h; sourceTree = "<group>"; };
+		E6E7F8B319E6636700CF9510 /* PersonInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PersonInfoViewController.m; path = Controller/PersonInfoViewController.m; sourceTree = "<group>"; };
+		E6E7F8B619E663A500CF9510 /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogInViewController.h; path = Controller/LogInViewController.h; sourceTree = "<group>"; };
+		E6E7F8B719E663A500CF9510 /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LogInViewController.m; path = Controller/LogInViewController.m; sourceTree = "<group>"; };
+		E6E7F8BC19E663D300CF9510 /* RegisteredViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisteredViewController.h; path = Controller/RegisteredViewController.h; sourceTree = "<group>"; };
+		E6E7F8BD19E663D300CF9510 /* RegisteredViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisteredViewController.m; path = Controller/RegisteredViewController.m; sourceTree = "<group>"; };
+		E6E7F8BF19E6691000CF9510 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = Controller/BaseViewController.h; sourceTree = "<group>"; };
+		E6E7F8C019E6691000CF9510 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = Controller/BaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,8 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				E67ED8F819E55F9200E78EA8 /* AdditionFunction */,
-				E67ED90319E5634B00E78EA8 /* Setting */,
-				E67ED90219E5633700E78EA8 /* Map */,
+				E6E7F89E19E661D500CF9510 /* Controller */,
 				E67ED83819E55B3A00E78EA8 /* AppDelegate.h */,
 				E67ED83919E55B3A00E78EA8 /* AppDelegate.m */,
 				E67ED84119E55B3A00E78EA8 /* Main.storyboard */,
@@ -450,10 +470,81 @@
 		E67ED90319E5634B00E78EA8 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				E6E7F89D19E661A600CF9510 /* BaseViewController */,
+				E6E7F8B519E6638F00CF9510 /* LoginAndSign */,
+				E6E7F89C19E6619800CF9510 /* AboutUs */,
+				E6E7F89B19E6618B00CF9510 /* MoreShareSetting */,
+				E6E7F89A19E6618000CF9510 /* AddressShare */,
+				E6E7F89919E6617500CF9510 /* PersonInfo */,
 				E67ED90419E5638500E78EA8 /* SettingViewController.h */,
 				E67ED90519E5638500E78EA8 /* SettingViewController.m */,
 			);
 			name = Setting;
+			sourceTree = "<group>";
+		};
+		E6E7F89919E6617500CF9510 /* PersonInfo */ = {
+			isa = PBXGroup;
+			children = (
+				E6E7F8B219E6636700CF9510 /* PersonInfoViewController.h */,
+				E6E7F8B319E6636700CF9510 /* PersonInfoViewController.m */,
+			);
+			name = PersonInfo;
+			sourceTree = "<group>";
+		};
+		E6E7F89A19E6618000CF9510 /* AddressShare */ = {
+			isa = PBXGroup;
+			children = (
+				E6E7F8AC19E6633700CF9510 /* AddressShareViewController.h */,
+				E6E7F8AD19E6633700CF9510 /* AddressShareViewController.m */,
+			);
+			name = AddressShare;
+			sourceTree = "<group>";
+		};
+		E6E7F89B19E6618B00CF9510 /* MoreShareSetting */ = {
+			isa = PBXGroup;
+			children = (
+				E6E7F8AF19E6635200CF9510 /* MoreShareViewController.h */,
+				E6E7F8B019E6635200CF9510 /* MoreShareViewController.m */,
+			);
+			name = MoreShareSetting;
+			sourceTree = "<group>";
+		};
+		E6E7F89C19E6619800CF9510 /* AboutUs */ = {
+			isa = PBXGroup;
+			children = (
+				E6E7F8A619E6630900CF9510 /* AboutUsViewController.h */,
+				E6E7F8A719E6630900CF9510 /* AboutUsViewController.m */,
+			);
+			name = AboutUs;
+			sourceTree = "<group>";
+		};
+		E6E7F89D19E661A600CF9510 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E6E7F8BF19E6691000CF9510 /* BaseViewController.h */,
+				E6E7F8C019E6691000CF9510 /* BaseViewController.m */,
+			);
+			name = BaseViewController;
+			sourceTree = "<group>";
+		};
+		E6E7F89E19E661D500CF9510 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E67ED90319E5634B00E78EA8 /* Setting */,
+				E67ED90219E5633700E78EA8 /* Map */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E6E7F8B519E6638F00CF9510 /* LoginAndSign */ = {
+			isa = PBXGroup;
+			children = (
+				E6E7F8B619E663A500CF9510 /* LogInViewController.h */,
+				E6E7F8B719E663A500CF9510 /* LogInViewController.m */,
+				E6E7F8BC19E663D300CF9510 /* RegisteredViewController.h */,
+				E6E7F8BD19E663D300CF9510 /* RegisteredViewController.m */,
+			);
+			name = LoginAndSign;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -632,9 +723,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				E67ED83A19E55B3A00E78EA8 /* AppDelegate.m in Sources */,
+				E6E7F8B419E6636700CF9510 /* PersonInfoViewController.m in Sources */,
+				E6E7F8C119E6691000CF9510 /* BaseViewController.m in Sources */,
+				E6E7F8B819E663A500CF9510 /* LogInViewController.m in Sources */,
+				E6E7F8B119E6635200CF9510 /* MoreShareViewController.m in Sources */,
+				E6E7F8BE19E663D300CF9510 /* RegisteredViewController.m in Sources */,
 				E67ED83719E55B3A00E78EA8 /* main.m in Sources */,
+				E6E7F8A819E6630900CF9510 /* AboutUsViewController.m in Sources */,
 				E67ED90119E5633300E78EA8 /* RoadMapViewController.m in Sources */,
 				E67ED90619E5638500E78EA8 /* SettingViewController.m in Sources */,
+				E6E7F8AE19E6633700CF9510 /* AddressShareViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -837,6 +935,7 @@
 				E67ED85919E55B3B00E78EA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E67ED85A19E55B3B00E78EA8 /* Build configuration list for PBXNativeTarget "ShareRoadTests" */ = {
 			isa = XCConfigurationList;
@@ -845,6 +944,7 @@
 				E67ED85C19E55B3B00E78EA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
