@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		E67ED83719E55B3A00E78EA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E67ED83619E55B3A00E78EA8 /* main.m */; };
 		E67ED83A19E55B3A00E78EA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E67ED83919E55B3A00E78EA8 /* AppDelegate.m */; };
-		E67ED83D19E55B3A00E78EA8 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E67ED83C19E55B3A00E78EA8 /* FirstViewController.m */; };
-		E67ED84019E55B3A00E78EA8 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E67ED83F19E55B3A00E78EA8 /* SecondViewController.m */; };
 		E67ED84319E55B3A00E78EA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E67ED84119E55B3A00E78EA8 /* Main.storyboard */; };
 		E67ED84519E55B3A00E78EA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E67ED84419E55B3A00E78EA8 /* Images.xcassets */; };
 		E67ED84819E55B3A00E78EA8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E67ED84619E55B3A00E78EA8 /* LaunchScreen.xib */; };
@@ -90,6 +88,8 @@
 		E67ED8F619E55F7300E78EA8 /* getNewRoadInfoRing.wav in Resources */ = {isa = PBXBuildFile; fileRef = E67ED8F419E55F7300E78EA8 /* getNewRoadInfoRing.wav */; };
 		E67ED8F719E55F7300E78EA8 /* promptsRing.wav in Resources */ = {isa = PBXBuildFile; fileRef = E67ED8F519E55F7300E78EA8 /* promptsRing.wav */; };
 		E67ED8FC19E5607B00E78EA8 /* libPushSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E67ED8FB19E5607B00E78EA8 /* libPushSDK.a */; };
+		E67ED90119E5633300E78EA8 /* RoadMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E67ED90019E5633300E78EA8 /* RoadMapViewController.m */; };
+		E67ED90619E5638500E78EA8 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E67ED90519E5638500E78EA8 /* SettingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,10 +108,6 @@
 		E67ED83619E55B3A00E78EA8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E67ED83819E55B3A00E78EA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E67ED83919E55B3A00E78EA8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E67ED83B19E55B3A00E78EA8 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		E67ED83C19E55B3A00E78EA8 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		E67ED83E19E55B3A00E78EA8 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		E67ED83F19E55B3A00E78EA8 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		E67ED84219E55B3A00E78EA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E67ED84419E55B3A00E78EA8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E67ED84719E55B3A00E78EA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -194,6 +190,10 @@
 		E67ED8F519E55F7300E78EA8 /* promptsRing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = promptsRing.wav; sourceTree = "<group>"; };
 		E67ED8FA19E5607B00E78EA8 /* APService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APService.h; path = AdditionFunction/JPush/APService.h; sourceTree = SOURCE_ROOT; };
 		E67ED8FB19E5607B00E78EA8 /* libPushSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPushSDK.a; path = AdditionFunction/JPush/libPushSDK.a; sourceTree = SOURCE_ROOT; };
+		E67ED8FF19E5633300E78EA8 /* RoadMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoadMapViewController.h; sourceTree = "<group>"; };
+		E67ED90019E5633300E78EA8 /* RoadMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoadMapViewController.m; sourceTree = "<group>"; };
+		E67ED90419E5638500E78EA8 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		E67ED90519E5638500E78EA8 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,12 +237,10 @@
 			isa = PBXGroup;
 			children = (
 				E67ED8F819E55F9200E78EA8 /* AdditionFunction */,
+				E67ED90319E5634B00E78EA8 /* Setting */,
+				E67ED90219E5633700E78EA8 /* Map */,
 				E67ED83819E55B3A00E78EA8 /* AppDelegate.h */,
 				E67ED83919E55B3A00E78EA8 /* AppDelegate.m */,
-				E67ED83B19E55B3A00E78EA8 /* FirstViewController.h */,
-				E67ED83C19E55B3A00E78EA8 /* FirstViewController.m */,
-				E67ED83E19E55B3A00E78EA8 /* SecondViewController.h */,
-				E67ED83F19E55B3A00E78EA8 /* SecondViewController.m */,
 				E67ED84119E55B3A00E78EA8 /* Main.storyboard */,
 				E67ED84419E55B3A00E78EA8 /* Images.xcassets */,
 				E67ED84619E55B3A00E78EA8 /* LaunchScreen.xib */,
@@ -282,26 +280,16 @@
 		E67ED85D19E55E3D00E78EA8 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				E67ED8FE19E562DA00E78EA8 /* Launch */,
+				E67ED8FD19E562CF00E78EA8 /* Icon */,
 				E67ED8E219E55F4000E78EA8 /* RecordingImage */,
 				E67ED8D119E55F2B00E78EA8 /* Login */,
 				E67ED8B419E55F0D00E78EA8 /* PersonInfo */,
 				E67ED8AB19E55EC000E78EA8 /* Tab */,
 				E67ED87E19E55EAE00E78EA8 /* Map */,
-				E67ED85E19E55E7500E78EA8 /* launch_1242.png */,
-				E67ED85F19E55E7500E78EA8 /* launch_750.png */,
-				E67ED86019E55E7500E78EA8 /* Icon_87.png */,
-				E67ED86119E55E7500E78EA8 /* Icon_180.png */,
-				E67ED86219E55E7500E78EA8 /* Icon_80.png */,
-				E67ED86319E55E7500E78EA8 /* Icon_120.png */,
 				E67ED86419E55E7500E78EA8 /* alert_close.png */,
 				E67ED86519E55E7500E78EA8 /* alert_tButton.png */,
 				E67ED86619E55E7500E78EA8 /* sina_sns_icon_1.png */,
-				E67ED86719E55E7500E78EA8 /* Icon-Small.png */,
-				E67ED86819E55E7500E78EA8 /* Default-568h@2x.png */,
-				E67ED86919E55E7500E78EA8 /* Default@2x.png */,
-				E67ED86A19E55E7500E78EA8 /* Icon-Small@2x.png */,
-				E67ED86B19E55E7500E78EA8 /* Icon.png */,
-				E67ED86C19E55E7500E78EA8 /* Icon@2x.png */,
 				E67ED86D19E55E7500E78EA8 /* 红绿灯.png */,
 			);
 			name = Image;
@@ -422,6 +410,50 @@
 				E67ED8FB19E5607B00E78EA8 /* libPushSDK.a */,
 			);
 			name = JPush;
+			sourceTree = "<group>";
+		};
+		E67ED8FD19E562CF00E78EA8 /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+				E67ED86A19E55E7500E78EA8 /* Icon-Small@2x.png */,
+				E67ED86B19E55E7500E78EA8 /* Icon.png */,
+				E67ED86C19E55E7500E78EA8 /* Icon@2x.png */,
+				E67ED86719E55E7500E78EA8 /* Icon-Small.png */,
+				E67ED86019E55E7500E78EA8 /* Icon_87.png */,
+				E67ED86119E55E7500E78EA8 /* Icon_180.png */,
+				E67ED86219E55E7500E78EA8 /* Icon_80.png */,
+				E67ED86319E55E7500E78EA8 /* Icon_120.png */,
+			);
+			name = Icon;
+			sourceTree = "<group>";
+		};
+		E67ED8FE19E562DA00E78EA8 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				E67ED86819E55E7500E78EA8 /* Default-568h@2x.png */,
+				E67ED86919E55E7500E78EA8 /* Default@2x.png */,
+				E67ED85E19E55E7500E78EA8 /* launch_1242.png */,
+				E67ED85F19E55E7500E78EA8 /* launch_750.png */,
+			);
+			name = Launch;
+			sourceTree = "<group>";
+		};
+		E67ED90219E5633700E78EA8 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				E67ED8FF19E5633300E78EA8 /* RoadMapViewController.h */,
+				E67ED90019E5633300E78EA8 /* RoadMapViewController.m */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		E67ED90319E5634B00E78EA8 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				E67ED90419E5638500E78EA8 /* SettingViewController.h */,
+				E67ED90519E5638500E78EA8 /* SettingViewController.m */,
+			);
+			name = Setting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -599,10 +631,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E67ED84019E55B3A00E78EA8 /* SecondViewController.m in Sources */,
 				E67ED83A19E55B3A00E78EA8 /* AppDelegate.m in Sources */,
-				E67ED83D19E55B3A00E78EA8 /* FirstViewController.m in Sources */,
 				E67ED83719E55B3A00E78EA8 /* main.m in Sources */,
+				E67ED90119E5633300E78EA8 /* RoadMapViewController.m in Sources */,
+				E67ED90619E5638500E78EA8 /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

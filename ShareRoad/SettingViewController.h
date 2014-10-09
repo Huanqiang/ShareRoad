@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  SettingViewController.h
 //  ShareRoad
 //
 //  Created by wanghuanqiang on 14/10/8.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
-
+@interface SettingViewController : UIViewController
 
 @end
-

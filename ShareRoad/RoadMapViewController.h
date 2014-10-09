@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  RoadMapViewController.h
 //  ShareRoad
 //
 //  Created by wanghuanqiang on 14/10/8.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
-
+@interface RoadMapViewController : UIViewController
 
 @end
-
