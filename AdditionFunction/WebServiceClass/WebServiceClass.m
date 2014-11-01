@@ -52,13 +52,15 @@ static WebServiceClass *instnce;
     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
     
     [NSURLConnection sendAsynchronousRequest:request queue:queue completionHandler:^(NSURLResponse* response, NSData* data, NSError* connectionError){
-        if ([data length] > 0 && connectionError == nil) {
-            NSString *result = [[WebServiceClass shareInstance] startXMLParser:data AndElementName:[NSString stringWithFormat:@"%@Result", wsName]];
-            NSDictionary *dic = [self stringToDictionary:result];
-            success(dic);
-        }else if (connectionError != nil) {
-            failure(connectionError);
-        }
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            if ([data length] > 0 && connectionError == nil) {
+                NSString *result = [[WebServiceClass shareInstance] startXMLParser:data AndElementName:[NSString stringWithFormat:@"%@Result", wsName]];
+                NSDictionary *dic = [self stringToDictionary:result];
+                success(dic);
+            }else if (connectionError != nil) {
+                failure(connectionError);
+            }
+        });
     }];
 }
 

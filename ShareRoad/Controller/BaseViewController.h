@@ -31,5 +31,6 @@
 
 #pragma mark - 键盘操作
 - (void)setCustomKeyboard:(id)delegate;
+-(void)hidenKeyboard;
 
 @end

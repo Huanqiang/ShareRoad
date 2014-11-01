@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self->keyboardSize.height = 216;
+    self->keyboardSize.height = 240;
     self->textFieldArr = @[personNameTextField, personPasswordTextField];
     [self setCustomKeyboard:self];
     
@@ -35,8 +35,10 @@
 
 #pragma mark - 登录
 - (IBAction)LogIn:(id)sender {
-    NSArray *personTextFieldArr = @[personNameTextField, personPasswordTextField];
-    if ([[CustomToolClass shareInstance] TextFieldIsFull:personTextFieldArr]) {
+    [self.view.window showHUDWithText:@"正在登录中..." Type:ShowLoading Enabled:YES];
+    [self hidenKeyboard];
+    
+    if ([[CustomToolClass shareInstance] TextFieldIsFull:self->textFieldArr]) {
         NSMutableArray *personInfo = [[NSMutableArray alloc] initWithArray:@[@"UserName",personNameTextField.text,@"Password",personPasswordTextField.text]];
         [self webServiceWithNet:@"UsersLogin" webServiceParmeters:personInfo success:^(NSDictionary *dic){
             [self dealWithNetManageResult:dic];
@@ -91,7 +93,7 @@
     
     //设置JPush
 //    [APService setAlias:phoneNumber callbackSelector:nil object:self];
-    [self.navigationController popViewControllerAnimated:YES];
+//    [self.navigationController popViewControllerAnimated:YES];
 }
 
 //网络操作获取照片

@@ -8,7 +8,7 @@
 
 #import "BaseViewController.h"
 
-#define WebServiceURL @"http://58.64.188.207:8003"
+#define WebServiceURL @"http://dream-001.xicp.net:5010"
 #define WebServiceFile @"/RoadInfService.asmx"
 #define WebServiceXmlNameSpace @"http://tempuri.org/"
 
@@ -53,10 +53,10 @@
 
 #pragma mark - 网络操作
 - (void)webServiceWithNet:(NSString *)wsName webServiceParmeters:(NSMutableArray *)wsParmeters success:(void(^)(NSDictionary *dic)) success{
-    [self.view.window showHUDWithText:@"正在登录中..." Type:ShowLoading Enabled:YES];
-    
+        
     [[WebServiceClass shareInstance] createAsynchronousRequestWithWebService:WebServiceURL webServiceFile:WebServiceFile xmlNameSpace:WebServiceXmlNameSpace webServiceName:wsName wsParameters:wsParmeters success:^(NSDictionary *dic){
         [self.view.window showHUDWithText:nil Type:ShowDismiss Enabled:YES];
+        success(dic);
     }failure:^(NSError *error){
         [self.view.window showHUDWithText:@"网络错误..." Type:ShowPhotoNo Enabled:YES];
     }];
@@ -116,9 +116,13 @@
 {
     //    CGRect frame = textField.frame;
     CGRect frame = textField.superview.frame;
-    //获取键盘大小
-    int offset = frame.origin.y + 260 + 60 - (self.view.frame.size.height - keyboardSize.height);//键盘高度216
-    
+    if (frame.origin.y == 0) {
+        
+        frame = textField.frame;
+    }
+    //判断控件与键盘的位置差
+    int offset = frame.origin.y + 60 - (self.view.frame.size.height - keyboardSize.height);//键盘高度216
+
     NSTimeInterval animationDuration = 0.30f;
     [UIView beginAnimations:@"ResizeForKeyboard" context:nil];
     [UIView setAnimationDuration:animationDuration];
