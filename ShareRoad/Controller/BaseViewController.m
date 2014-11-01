@@ -52,12 +52,26 @@
 
 
 #pragma mark - 网络操作
-- (void)webServiceWithNet:(NSString *)wsName webServiceParmeters:(NSMutableArray *)wsParmeters success:(void(^)(NSDictionary *dic)) success failure:(void(^)(NSError *error)) failure {
+- (void)webServiceWithNet:(NSString *)wsName webServiceParmeters:(NSMutableArray *)wsParmeters success:(void(^)(NSDictionary *dic)) success{
+    [self.view.window showHUDWithText:@"正在登录中..." Type:ShowLoading Enabled:YES];
     
-    [[WebServiceClass shareInstance] createAsynchronousRequestWithWebService:WebServiceURL webServiceFile:WebServiceFile xmlNameSpace:WebServiceXmlNameSpace webServiceName:wsName wsParameters:wsParmeters success:success failure:^(NSError *error){
+    [[WebServiceClass shareInstance] createAsynchronousRequestWithWebService:WebServiceURL webServiceFile:WebServiceFile xmlNameSpace:WebServiceXmlNameSpace webServiceName:wsName wsParameters:wsParmeters success:^(NSDictionary *dic){
+        [self.view.window showHUDWithText:nil Type:ShowDismiss Enabled:YES];
+    }failure:^(NSError *error){
         [self.view.window showHUDWithText:@"网络错误..." Type:ShowPhotoNo Enabled:YES];
     }];
 }
+
+#pragma mark - 弹出简单提示 alertView 控件
+- (void)showAlertView:(NSString *)title msg:(NSString *)msg delegate:(id)delegate{
+    BOAlertController *alert = [[BOAlertController alloc] initWithTitle:title message:msg subView:nil viewController:delegate];
+    RIButtonItem *okItem = [RIButtonItem itemWithLabel:@"确定" action:^{
+        
+    }];
+    [alert addButton:okItem type:RIButtonItemType_Destructive];
+    [alert show];
+}
+
 
 
 #pragma mark - 键盘操作

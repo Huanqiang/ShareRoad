@@ -10,6 +10,9 @@
 #import "WebServiceClass.h"
 #import "UIWindow+YzdHUD.h"
 #import "LogInToolClass.h"
+#import "UserInfo.h"
+#import "BOAlertController.h"
+#import "CustomToolClass.h"
 
 @interface BaseViewController : UIViewController<UITextFieldDelegate> {
     CGSize keyboardSize;
@@ -21,7 +24,10 @@
 - (void)setBtnCircleBead:(UIButton *)senderBtn;
 
 #pragma mark - 网络操作
-- (void)webServiceWithNet:(NSString *)wsName webServiceParmeters:(NSMutableArray *)wsParmeters success:(void(^)(NSDictionary *dic)) success failure:(void(^)(NSError *error)) failure;
+- (void)webServiceWithNet:(NSString *)wsName webServiceParmeters:(NSMutableArray *)wsParmeters success:(void(^)(NSDictionary *dic)) success;
+
+#pragma mark - 弹出简单提示 alertView 控件
+- (void)showAlertView:(NSString *)title msg:(NSString *)msg delegate:(id)delegate;
 
 #pragma mark - 键盘操作
 - (void)setCustomKeyboard:(id)delegate;

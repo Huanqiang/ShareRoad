@@ -6,8 +6,8 @@
 //  Copyright (c) 2014年 枫叶. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface RoadMapViewController : UIViewController
+@interface RoadMapViewController : BaseViewController
 
 @end
