@@ -67,7 +67,7 @@ typedef void (^ DealWithPhotoOperateBlock) (NSMutableArray *);
  imageName：照片名字；
  返回值介绍：返回UIImage；
  */
-- (UIImage *)getImageWithImageName:(NSString *)imageName;
+- (NSDictionary *)getImageWithImageName:(NSString *)imageName;
 
 /*
  方法：用imageName获取imageURL

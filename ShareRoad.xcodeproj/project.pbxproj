@@ -102,6 +102,8 @@
 		E67ED90619E5638500E78EA8 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E67ED90519E5638500E78EA8 /* SettingViewController.m */; };
 		E69806D619E6B4DF00B441D7 /* CustomToolClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E69806D519E6B4DF00B441D7 /* CustomToolClass.m */; };
 		E69806D919E6B4F100B441D7 /* WebServiceClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E69806D819E6B4F100B441D7 /* WebServiceClass.m */; };
+		E69CB5841A04CB6900BC406E /* CLLocation+YCLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = E69CB5821A04CB6900BC406E /* CLLocation+YCLocation.m */; };
+		E69CB5871A04CB9400BC406E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69CB5861A04CB9400BC406E /* CoreLocation.framework */; };
 		E6ABEAB81A046BEE00A616FE /* BOAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6ABEAB11A046BEE00A616FE /* BOAlertController.m */; };
 		E6ABEAB91A046BEE00A616FE /* RIButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E6ABEAB31A046BEE00A616FE /* RIButtonItem.m */; };
 		E6ABEABA1A046BEE00A616FE /* UIActionSheet+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = E6ABEAB51A046BEE00A616FE /* UIActionSheet+Blocks.m */; };
@@ -110,6 +112,9 @@
 		E6BA93FE1A03A6BD000C7386 /* libbaidumapapi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6BA93FC1A03A6BD000C7386 /* libbaidumapapi.a */; };
 		E6BA93FF1A03A6BD000C7386 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E6BA93FD1A03A6BD000C7386 /* mapapi.bundle */; };
 		E6BA94031A03B701000C7386 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E6BA94021A03B701000C7386 /* UserInfo.m */; };
+		E6D403301A05D41C00B5627F /* BaseNeedLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D4032F1A05D41C00B5627F /* BaseNeedLogInViewController.m */; };
+		E6D403321A05D8FB00B5627F /* setting_return.png in Resources */ = {isa = PBXBuildFile; fileRef = E6D403311A05D8FB00B5627F /* setting_return.png */; };
+		E6DC3FED1A06724A00880B3B /* UpdatePersonPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6DC3FEC1A06724A00880B3B /* UpdatePersonPasswordViewController.m */; };
 		E6E7F8A819E6630900CF9510 /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E7F8A719E6630900CF9510 /* AboutUsViewController.m */; };
 		E6E7F8AE19E6633700CF9510 /* AddressShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E7F8AD19E6633700CF9510 /* AddressShareViewController.m */; };
 		E6E7F8B119E6635200CF9510 /* MoreShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E7F8B019E6635200CF9510 /* MoreShareViewController.m */; };
@@ -241,6 +246,9 @@
 		E69806D519E6B4DF00B441D7 /* CustomToolClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomToolClass.m; path = AdditionFunction/CustomToolClass/CustomToolClass.m; sourceTree = SOURCE_ROOT; };
 		E69806D719E6B4F100B441D7 /* WebServiceClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebServiceClass.h; path = AdditionFunction/WebServiceClass/WebServiceClass.h; sourceTree = SOURCE_ROOT; };
 		E69806D819E6B4F100B441D7 /* WebServiceClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebServiceClass.m; path = AdditionFunction/WebServiceClass/WebServiceClass.m; sourceTree = SOURCE_ROOT; };
+		E69CB5811A04CB6900BC406E /* CLLocation+YCLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+YCLocation.h"; sourceTree = "<group>"; };
+		E69CB5821A04CB6900BC406E /* CLLocation+YCLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+YCLocation.m"; sourceTree = "<group>"; };
+		E69CB5861A04CB9400BC406E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		E6ABEAB01A046BEE00A616FE /* BOAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOAlertController.h; sourceTree = "<group>"; };
 		E6ABEAB11A046BEE00A616FE /* BOAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOAlertController.m; sourceTree = "<group>"; };
 		E6ABEAB21A046BEE00A616FE /* RIButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIButtonItem.h; sourceTree = "<group>"; };
@@ -316,6 +324,11 @@
 		E6BA93FD1A03A6BD000C7386 /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = mapapi.bundle; sourceTree = "<group>"; };
 		E6BA94011A03B701000C7386 /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserInfo.h; path = Controller/UserInfo.h; sourceTree = "<group>"; };
 		E6BA94021A03B701000C7386 /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserInfo.m; path = Controller/UserInfo.m; sourceTree = "<group>"; };
+		E6D4032E1A05D41C00B5627F /* BaseNeedLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseNeedLogInViewController.h; path = Controller/BaseNeedLogInViewController.h; sourceTree = "<group>"; };
+		E6D4032F1A05D41C00B5627F /* BaseNeedLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseNeedLogInViewController.m; path = Controller/BaseNeedLogInViewController.m; sourceTree = "<group>"; };
+		E6D403311A05D8FB00B5627F /* setting_return.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting_return.png; sourceTree = "<group>"; };
+		E6DC3FEB1A06724A00880B3B /* UpdatePersonPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UpdatePersonPasswordViewController.h; path = Controller/UpdatePersonPasswordViewController.h; sourceTree = "<group>"; };
+		E6DC3FEC1A06724A00880B3B /* UpdatePersonPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UpdatePersonPasswordViewController.m; path = Controller/UpdatePersonPasswordViewController.m; sourceTree = "<group>"; };
 		E6E7F8A619E6630900CF9510 /* AboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutUsViewController.h; path = Controller/AboutUsViewController.h; sourceTree = "<group>"; };
 		E6E7F8A719E6630900CF9510 /* AboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutUsViewController.m; path = Controller/AboutUsViewController.m; sourceTree = "<group>"; };
 		E6E7F8AC19E6633700CF9510 /* AddressShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddressShareViewController.h; path = Controller/AddressShareViewController.h; sourceTree = "<group>"; };
@@ -337,6 +350,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E69CB5871A04CB9400BC406E /* CoreLocation.framework in Frameworks */,
 				E67ED8FC19E5607B00E78EA8 /* libPushSDK.a in Frameworks */,
 				E6BA93FE1A03A6BD000C7386 /* libbaidumapapi.a in Frameworks */,
 			);
@@ -387,6 +401,7 @@
 		E67ED82819E55B3A00E78EA8 = {
 			isa = PBXGroup;
 			children = (
+				E69CB5861A04CB9400BC406E /* CoreLocation.framework */,
 				E67ED83319E55B3A00E78EA8 /* ShareRoad */,
 				E67ED85019E55B3B00E78EA8 /* ShareRoadTests */,
 				E67ED83219E55B3A00E78EA8 /* Products */,
@@ -566,6 +581,7 @@
 		E67ED8F819E55F9200E78EA8 /* AdditionFunction */ = {
 			isa = PBXGroup;
 			children = (
+				E69CB5801A04CB6900BC406E /* location */,
 				E6ABEABC1A04720800A616FE /* PhotoAndCameraClass */,
 				E6ABEAAF1A046BEE00A616FE /* UIAlertView_ActionSheet */,
 				E6BA93BD1A03A6BD000C7386 /* BaiduMap */,
@@ -630,7 +646,7 @@
 				E6E7F89C19E6619800CF9510 /* AboutUs */,
 				E6E7F89B19E6618B00CF9510 /* MoreShareSetting */,
 				E6E7F89A19E6618000CF9510 /* AddressShare */,
-				E6E7F89919E6617500CF9510 /* PersonInfo */,
+				E6E7F89919E6617500CF9510 /* UpdatePersonInfo */,
 				E67ED90419E5638500E78EA8 /* SettingViewController.h */,
 				E67ED90519E5638500E78EA8 /* SettingViewController.m */,
 			);
@@ -654,6 +670,16 @@
 			);
 			name = CustomToolClass;
 			sourceTree = "<group>";
+		};
+		E69CB5801A04CB6900BC406E /* location */ = {
+			isa = PBXGroup;
+			children = (
+				E69CB5811A04CB6900BC406E /* CLLocation+YCLocation.h */,
+				E69CB5821A04CB6900BC406E /* CLLocation+YCLocation.m */,
+			);
+			name = location;
+			path = AdditionFunction/location;
+			sourceTree = SOURCE_ROOT;
 		};
 		E6ABEAAF1A046BEE00A616FE /* UIAlertView_ActionSheet */ = {
 			isa = PBXGroup;
@@ -769,13 +795,15 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		E6E7F89919E6617500CF9510 /* PersonInfo */ = {
+		E6E7F89919E6617500CF9510 /* UpdatePersonInfo */ = {
 			isa = PBXGroup;
 			children = (
+				E6DC3FEB1A06724A00880B3B /* UpdatePersonPasswordViewController.h */,
+				E6DC3FEC1A06724A00880B3B /* UpdatePersonPasswordViewController.m */,
 				E6E7F8B219E6636700CF9510 /* PersonInfoViewController.h */,
 				E6E7F8B319E6636700CF9510 /* PersonInfoViewController.m */,
 			);
-			name = PersonInfo;
+			name = UpdatePersonInfo;
 			sourceTree = "<group>";
 		};
 		E6E7F89A19E6618000CF9510 /* AddressShare */ = {
@@ -810,6 +838,8 @@
 			children = (
 				E6E7F8BF19E6691000CF9510 /* BaseViewController.h */,
 				E6E7F8C019E6691000CF9510 /* BaseViewController.m */,
+				E6D4032E1A05D41C00B5627F /* BaseNeedLogInViewController.h */,
+				E6D4032F1A05D41C00B5627F /* BaseNeedLogInViewController.m */,
 			);
 			name = BaseViewController;
 			sourceTree = "<group>";
@@ -827,6 +857,7 @@
 		E6E7F8B519E6638F00CF9510 /* LoginAndSign */ = {
 			isa = PBXGroup;
 			children = (
+				E6D403311A05D8FB00B5627F /* setting_return.png */,
 				E6E7F8B619E663A500CF9510 /* LogInViewController.h */,
 				E6E7F8B719E663A500CF9510 /* LogInViewController.m */,
 				E6E7F8BC19E663D300CF9510 /* RegisteredViewController.h */,
@@ -945,6 +976,7 @@
 				E67ED8C419E55F2000E78EA8 /* Person_UserIcon@2x.png in Resources */,
 				E67ED8EB19E55F5400E78EA8 /* Speak_Voice1.png in Resources */,
 				E67ED8DF19E55F3400E78EA8 /* Login_password@2x.png in Resources */,
+				E6D403321A05D8FB00B5627F /* setting_return.png in Resources */,
 				E67ED8F619E55F7300E78EA8 /* getNewRoadInfoRing.wav in Resources */,
 				E67ED8CF19E55F2000E78EA8 /* Person_Top.png in Resources */,
 				E67ED87819E55E7500E78EA8 /* Default-568h@2x.png in Resources */,
@@ -1016,9 +1048,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6783E4E19E6C7C2007DF9A2 /* YzdHUDBackgroundView.m in Sources */,
+				E6D403301A05D41C00B5627F /* BaseNeedLogInViewController.m in Sources */,
 				E67ED83A19E55B3A00E78EA8 /* AppDelegate.m in Sources */,
 				E6783E4F19E6C7C2007DF9A2 /* YzdHUDImageView.m in Sources */,
 				E6ABEAB91A046BEE00A616FE /* RIButtonItem.m in Sources */,
+				E69CB5841A04CB6900BC406E /* CLLocation+YCLocation.m in Sources */,
 				E6E7F8B419E6636700CF9510 /* PersonInfoViewController.m in Sources */,
 				E6ABEAB81A046BEE00A616FE /* BOAlertController.m in Sources */,
 				E6E7F8C119E6691000CF9510 /* BaseViewController.m in Sources */,
@@ -1032,6 +1066,7 @@
 				E6783E4D19E6C7C2007DF9A2 /* UIWindow+YzdHUD.m in Sources */,
 				E6E7F8BE19E663D300CF9510 /* RegisteredViewController.m in Sources */,
 				E6783E5019E6C7C2007DF9A2 /* YzdHUDIndicator.m in Sources */,
+				E6DC3FED1A06724A00880B3B /* UpdatePersonPasswordViewController.m in Sources */,
 				E6783E5119E6C7C2007DF9A2 /* YzdHUDLabel.m in Sources */,
 				E69806D919E6B4F100B441D7 /* WebServiceClass.m in Sources */,
 				E67ED83719E55B3A00E78EA8 /* main.m in Sources */,
@@ -1161,16 +1196,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = ShareRoad/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AdditionFunction/JPush",
 					"$(PROJECT_DIR)/AdditionFunction/BaiduMap",
 				);
+				PRODUCT_MODULE_NAME = ShareRoadWithSwf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ShareRoad/ShareRoad-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -1178,16 +1218,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = ShareRoad/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AdditionFunction/JPush",
 					"$(PROJECT_DIR)/AdditionFunction/BaiduMap",
 				);
+				PRODUCT_MODULE_NAME = ShareRoadWithSwf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ShareRoad/ShareRoad-Bridging-Header.h";
 			};
 			name = Release;
 		};

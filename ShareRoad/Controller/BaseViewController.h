@@ -17,6 +17,7 @@
 @interface BaseViewController : UIViewController<UITextFieldDelegate> {
     CGSize keyboardSize;
     NSArray *textFieldArr;
+    NSString *className;
 }
 
 #pragma mark - 设置圆角

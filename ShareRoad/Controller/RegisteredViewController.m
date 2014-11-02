@@ -39,6 +39,14 @@
     [self setViewCircleBead:personPasswordView];
     [self setViewCircleBead:personSurePasswordView];
     [self setBtnCircleBead:registerBtn];
+    
+    [self.personNameTextField becomeFirstResponder];
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"setting_return"] style:UIBarButtonItemStylePlain target:self action:@selector(popToSettingView)];
+}
+
+- (void)popToSettingView {
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

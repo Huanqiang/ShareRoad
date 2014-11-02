@@ -15,6 +15,8 @@
 + (id)shareInstance;
 
 - (void)saveUserCookie;
+- (void)removeUserCookie;
+- (BOOL)isCookie;
 
 //储存用户信息
 - (void)saveUserName:(NSString *)userName;
@@ -22,14 +24,23 @@
 - (void)saveUserAddress:(NSString *)userAddress;
 - (void)saveUserSex:(NSString *)userSex;
 - (void)saveUserPhone:(NSString *)userPhone;
-- (void)saveUserIcon:(NSData *)userIcon;
+- (void)saveUserIcon:(NSData *)userIcon;      // 将照片存至 Doc 文件里
+- (void)saveUserIconPath;                     // 存储照片路径
 
 
 //获取用户信息
 - (NSString *)gainUserName;
-- (NSString *)gainUserIcon;
+- (NSDictionary *)gainUserIcon;
+- (NSString *)gainUserIconPath;
 - (NSString *)gainUserSex;
 - (NSString *)gainUserPhone;
 - (NSString *)gainUserAddress;
+
+//删除用户信息
+- (void)removeUserName;
+- (void)removeUserIcon;
+- (void)removeUserSex;
+- (void)removeUserPhone;
+- (void)removeUserAddress;
 
 @end

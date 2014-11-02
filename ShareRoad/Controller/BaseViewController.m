@@ -22,6 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    className = @"baseViewController";
 }
 
 - (void)didReceiveMemoryWarning {
@@ -122,6 +123,10 @@
     }
     //判断控件与键盘的位置差
     int offset = frame.origin.y + 60 - (self.view.frame.size.height - keyboardSize.height);//键盘高度216
+    if ([className isEqualToString:@"PersonInfoViewController"]) {
+        offset += 260;
+    }
+    
 
     NSTimeInterval animationDuration = 0.30f;
     [UIView beginAnimations:@"ResizeForKeyboard" context:nil];

@@ -154,11 +154,19 @@ static int count = 0;
     return imagePath;
 }
 
-- (UIImage *)getImageWithImageName:(NSString *)imageName {
-
+- (NSDictionary *)getImageWithImageName:(NSString *)imageName {
+    NSData *imageData = [[NSData alloc] init];
+    NSString *hasImage = @"";
     UIImage *image = [UIImage imageWithContentsOfFile:[self getImageURLString:imageName]];
     
-    return image;
+    if (image != nil) {
+        imageData = UIImagePNGRepresentation(image);
+        hasImage = @"1";
+    }else {
+        imageData = [@"123" dataUsingEncoding:NSUTF8StringEncoding];
+        hasImage = @"2";
+    }
+    return @{hasImage: imageData};
 }
 
 @end

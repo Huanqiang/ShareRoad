@@ -21,11 +21,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+//    [self.personNameTextField becomeFirstResponder];
     self->keyboardSize.height = 240;
     self->textFieldArr = @[personNameTextField, personPasswordTextField];
     [self setCustomKeyboard:self];
     
     user = [UserInfo shareInstance];
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"setting_return"] style:UIBarButtonItemStylePlain target:self action:@selector(popToSettingView)];
+}
+
+- (void)popToSettingView {
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -79,21 +86,21 @@
 }
 
 //保存信息到手机
-- (void)saveUserInfoAfterLogIn:(NSDictionary *)dic {
-    NSString *userImagePath = [dic objectForKey:@"userIcon"];
-    
+- (void)saveUserInfoAfterLogIn:(NSDictionary *)dic {    
     [user saveUserCookie];
     [user saveUserName:[dic objectForKey:@"userName"]];
     [user saveUserPhone:[dic objectForKey:@"phoneNumber"]];
     [user saveUserAddress:[dic objectForKey:@"address"]];
+    [user saveUserSex:[dic objectForKey:@"userSex"]];
     
+    NSString *userImagePath = [dic objectForKey:@"userIcon"];
     if (![userImagePath isEqualToString:@""]) {
         [self getUserImage:userImagePath];
     }
     
     //设置JPush
 //    [APService setAlias:phoneNumber callbackSelector:nil object:self];
-//    [self.navigationController popViewControllerAnimated:YES];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 //网络操作获取照片
