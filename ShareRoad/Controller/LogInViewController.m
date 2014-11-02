@@ -8,9 +8,7 @@
 
 #import "LogInViewController.h"
 
-@interface LogInViewController () {
-    UserInfo *user;
-}
+@interface LogInViewController ()
 
 @end
 
@@ -41,11 +39,11 @@
 }
 
 #pragma mark - 登录
-- (IBAction)LogIn:(id)sender {
-    [self.view.window showHUDWithText:@"正在登录中..." Type:ShowLoading Enabled:YES];
+- (IBAction)LogIn:(id)sender {    
     [self hidenKeyboard];
     
     if ([[CustomToolClass shareInstance] TextFieldIsFull:self->textFieldArr]) {
+        [self.view.window showHUDWithText:@"正在登录中..." Type:ShowLoading Enabled:YES];
         NSMutableArray *personInfo = [[NSMutableArray alloc] initWithArray:@[@"UserName",personNameTextField.text,@"Password",personPasswordTextField.text]];
         [self webServiceWithNet:@"UsersLogin" webServiceParmeters:personInfo success:^(NSDictionary *dic){
             [self dealWithNetManageResult:dic];

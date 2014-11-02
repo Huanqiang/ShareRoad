@@ -18,6 +18,7 @@
     CGSize keyboardSize;
     NSArray *textFieldArr;
     NSString *className;
+    UserInfo *user;
 }
 
 #pragma mark - 设置圆角

@@ -8,9 +8,7 @@
 
 #import "RegisteredViewController.h"
 
-@interface RegisteredViewController () {
-    UserInfo *user;
-}
+@interface RegisteredViewController ()
 
 @end
 

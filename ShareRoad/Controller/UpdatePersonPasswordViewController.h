@@ -10,4 +10,9 @@
 
 @interface UpdatePersonPasswordViewController : BaseViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *personOldPasswordTextField;
+@property (weak, nonatomic) IBOutlet UITextField *personNewPasswordTextField;
+@property (weak, nonatomic) IBOutlet UITextField *personSureNewPasswordTextField;
+
+- (IBAction)updatePersonPassword:(id)sender;
 @end

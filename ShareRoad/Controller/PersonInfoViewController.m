@@ -9,7 +9,6 @@
 #import "PersonInfoViewController.h"
 
 @interface PersonInfoViewController () {
-    UserInfo *user;
     CLLocationManager *locationManager;
 }
 
@@ -71,7 +70,6 @@
 //设置用户信息
 - (void)setPersonInfo {
     //读取文本信息，判断有无用户头像、姓名、性别、手机号、所在地；
-    NSLog(@"name:%@", [user gainUserName]);
     personNameTextField.text = [user gainUserName];
     personNameLabel.text = [user gainUserName];
     personPhoneTextField.text = [user gainUserPhone];
