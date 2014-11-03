@@ -7,6 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WeiboSDK.h"
+#import <ShareSDK/ShareSDK.h>
+
+#import "APService.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

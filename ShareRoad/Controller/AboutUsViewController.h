@@ -7,7 +7,10 @@
 //
 
 #import "BaseViewController.h"
+#import "FeedbackContextViewController.h"
 
-@interface AboutUsViewController : BaseViewController
+@interface AboutUsViewController : BaseViewController<UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *mainTableView;
+@property (weak, nonatomic) IBOutlet UILabel *urlLabel;
 
 @end

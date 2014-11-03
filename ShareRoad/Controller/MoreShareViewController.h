@@ -7,7 +7,11 @@
 //
 
 #import "BaseViewController.h"
+#import "MoreShareTableViewCell.h"
+#import "PlatformShare.h"
+#import "PlatformShareFactory.h"
 
-@interface MoreShareViewController : BaseViewController
+@interface MoreShareViewController : BaseViewController<UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *mainTableView;
 
 @end

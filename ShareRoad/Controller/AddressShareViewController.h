@@ -6,8 +6,16 @@
 //  Copyright (c) 2014年 枫叶. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "BaseNeedLogInViewController.h"
+#import "CLLocation+YCLocation.h"
+#import <CoreLocation/CoreLocation.h>
 
-@interface AddressShareViewController : BaseViewController
+@interface AddressShareViewController : BaseNeedLogInViewController<CLLocationManagerDelegate> {
+    CLLocationManager *locationManager;
+}
 
+@property (weak, nonatomic) IBOutlet UITextField *phoneNumberTextField;
+@property (weak, nonatomic) IBOutlet UIButton *addressShareBtn;
+
+- (IBAction)addressShare:(id)sender;
 @end

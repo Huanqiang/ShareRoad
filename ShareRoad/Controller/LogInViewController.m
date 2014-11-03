@@ -97,7 +97,7 @@
     }
     
     //设置JPush
-//    [APService setAlias:phoneNumber callbackSelector:nil object:self];
+    [APService setAlias:[dic objectForKey:@"phoneNumber"] callbackSelector:nil object:self];
     [self.navigationController popViewControllerAnimated:YES];
 }
 

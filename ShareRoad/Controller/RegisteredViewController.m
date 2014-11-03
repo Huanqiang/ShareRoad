@@ -123,7 +123,7 @@
     [user saveUserCookie];
     
     //设置JPush
-//    [APService setAlias:phoneNumberField.text callbackSelector:nil object:self];
+    [APService setAlias:personPhoneTextField.text callbackSelector:nil object:self];
     
     [self.navigationController popViewControllerAnimated:YES];
 }

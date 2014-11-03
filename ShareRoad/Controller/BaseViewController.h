@@ -13,6 +13,9 @@
 #import "UserInfo.h"
 #import "BOAlertController.h"
 #import "CustomToolClass.h"
+#import "APService.h"
+
+#define MyAppKey @"1234567"
 
 @interface BaseViewController : UIViewController<UITextFieldDelegate> {
     CGSize keyboardSize;
