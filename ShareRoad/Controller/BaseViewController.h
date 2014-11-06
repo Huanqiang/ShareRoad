@@ -17,6 +17,10 @@
 
 #define MyAppKey @"1234567"
 
+#define WebServiceURL @"http://58.64.188.207:8003"
+#define WebServiceFile @"/RoadInfService.asmx"
+#define WebServiceXmlNameSpace @"http://tempuri.org/"
+
 @interface BaseViewController : UIViewController<UITextFieldDelegate> {
     CGSize keyboardSize;
     NSArray *textFieldArr;

@@ -17,6 +17,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //百度地图
+    // 要使用百度地图，请先启动BaiduMapManager
+    _mapManager = [[BMKMapManager alloc]init];
+    // 如果需要关注网络及授权验证事件，请设定generalDelegate参数为self
+    // 如果不需要关注网络及授权验证事件，请设定generalDelegate参数为nil
+    BOOL ret = [_mapManager start:@"iuXrkvFZ3LaGgVSGkDG1fGVa"  generalDelegate:self];
+    if (!ret) {
+        NSLog(@"manager start failed!");
+    }
+    
+    // 集成科大讯飞语言
+    //将“12345678”替换成您申请的APPID,申请地址:http://open.voicecloud.cn
+    NSString *initString = [[NSString alloc] initWithFormat:@"appid=%@",@"53bf4f03"];
+    [IFlySpeechUtility createUtility:initString];
+    
     //集成 ShareSDK，  参数为ShareSDK官网中添加应用后得到的AppKey
     [ShareSDK registerApp:@"24d00bf5e974"];
     //添加新浪微博应用 注册网址 http://open.weibo.com

@@ -9,10 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "WeiboSDK.h"
 #import <ShareSDK/ShareSDK.h>
-
+#import "BMapKit.h"
 #import "APService.h"
+#import "iflyMSC/IFlySpeechUtility.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, BMKGeneralDelegate> {
+    BMKMapManager * _mapManager;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 

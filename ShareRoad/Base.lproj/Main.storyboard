@@ -19,38 +19,164 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="221" y="279" width="158" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <rect key="frame" x="203" y="329" width="195" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Dq-J9-As7" customClass="BMKMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjM-nX-AnH">
+                                <rect key="frame" x="530" y="195" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fjM-nX-AnH" secondAttribute="height" multiplier="1:1" id="iDM-ab-Khl"/>
+                                </constraints>
+                                <state key="normal" image="Map_showRoadPicture.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getCameraAndPhoto:" destination="9pv-A4-QxB" eventType="touchUpInside" id="oI8-k1-grh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pe5-Fh-WQc">
+                                <rect key="frame" x="530" y="130" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="QJ3-D7-tuY"/>
+                                    <constraint firstAttribute="width" secondItem="Pe5-Fh-WQc" secondAttribute="height" multiplier="1:1" id="gXF-d0-h4W"/>
+                                </constraints>
+                                <state key="normal" image="Map_showRoadVoice.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getRecording:" destination="9pv-A4-QxB" eventType="touchUpInside" id="h38-Wo-uVA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gjh-uF-hVj">
+                                <rect key="frame" x="20" y="500" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="Q11-HI-gDn"/>
+                                    <constraint firstAttribute="width" secondItem="Gjh-uF-hVj" secondAttribute="height" multiplier="1:1" id="sMn-Sv-HSq"/>
+                                </constraints>
+                                <state key="normal" image="Map_Following.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startLocationWithDifferentType:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Yjk-eu-vav"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstItem="1Dq-J9-As7" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-16" id="5zJ-nI-mN6"/>
+                            <constraint firstItem="fjM-nX-AnH" firstAttribute="top" secondItem="Pe5-Fh-WQc" secondAttribute="bottom" constant="15" id="83r-pf-26A"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1Dq-J9-As7" secondAttribute="trailing" constant="-16" id="9UQ-p7-bcT"/>
+                            <constraint firstItem="1Dq-J9-As7" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="topMargin" id="9Wi-rC-i4D"/>
+                            <constraint firstItem="fjM-nX-AnH" firstAttribute="width" secondItem="Pe5-Fh-WQc" secondAttribute="width" id="Nfy-L7-t7V"/>
+                            <constraint firstItem="Gjh-uF-hVj" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="4" id="OBf-A6-dqV"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="1Dq-J9-As7" secondAttribute="bottom" id="QQY-YG-9XR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Pe5-Fh-WQc" secondAttribute="trailing" constant="4" id="ZCp-m7-pVh"/>
+                            <constraint firstItem="Pe5-Fh-WQc" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="110" id="cWT-dX-WVx"/>
+                            <constraint firstItem="fjM-nX-AnH" firstAttribute="leading" secondItem="Pe5-Fh-WQc" secondAttribute="leading" id="hD9-DY-fEi"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="Gjh-uF-hVj" secondAttribute="bottom" constant="21" id="iEr-vg-fAe"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="地图" image="tab_Map.png" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="baiduMapView" destination="1Dq-J9-As7" id="8IG-Yi-aSF"/>
+                        <outlet property="locationTypeBtn" destination="Gjh-uF-hVj" id="QIx-gi-Me9"/>
+                        <outlet property="showCameraViewBtn" destination="fjM-nX-AnH" id="asd-Ws-04D"/>
+                        <outlet property="showRecordingViewBtn" destination="Pe5-Fh-WQc" id="b4Y-bK-Nbu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
+        <!--Recording View Controller-->
+        <scene sceneID="ZZB-KA-Nb6">
+            <objects>
+                <viewController storyboardIdentifier="RecordingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Iyz-vB-utD" customClass="RecordingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jua-X2-Lp6"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Cg-Tc-Brz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="A3w-8g-VXJ">
+                        <rect key="frame" x="0.0" y="0.0" width="260" height="200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPG-TQ-lO7">
+                                <rect key="frame" x="0.0" y="160" width="130" height="40"/>
+                                <color key="backgroundColor" red="0.74509803921568629" green="0.74509803921568629" blue="0.74509803921568629" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="T8j-IC-l97"/>
+                                    <constraint firstAttribute="width" constant="130" id="TuJ-NQ-sFk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="完毕">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveRecording:" destination="Iyz-vB-utD" eventType="touchUpInside" id="UgR-qb-Xwp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="亲，录音时间到达10秒后自动关闭!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r6V-2h-ZEc">
+                                <rect key="frame" x="0.0" y="1" width="260" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="OnO-nH-zrw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.42624383223684215" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8m-ss-2Cv">
+                                <rect key="frame" x="131" y="160" width="129" height="40"/>
+                                <color key="backgroundColor" red="0.74509803919999995" green="0.74509803919999995" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="129" id="Kbe-3P-hYM"/>
+                                    <constraint firstAttribute="height" constant="40" id="y04-x1-1VJ"/>
+                                </constraints>
+                                <state key="normal" title="取消">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="closePopView:" destination="Iyz-vB-utD" eventType="touchUpInside" id="T0L-dU-cFU"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Speak_Voice1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hyv-3t-GOc">
+                                <rect key="frame" x="65" y="39" width="130" height="111"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Hyv-3t-GOc" firstAttribute="top" secondItem="r6V-2h-ZEc" secondAttribute="bottom" constant="8" id="AMy-va-Oih"/>
+                            <constraint firstItem="r6V-2h-ZEc" firstAttribute="leading" secondItem="A3w-8g-VXJ" secondAttribute="leadingMargin" constant="-16" id="Ai5-st-1nr"/>
+                            <constraint firstItem="0Cg-Tc-Brz" firstAttribute="top" secondItem="UPG-TQ-lO7" secondAttribute="bottom" id="FXx-vs-EiF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Z8m-ss-2Cv" secondAttribute="trailing" constant="-16" id="Rfv-iw-Z1x"/>
+                            <constraint firstItem="Z8m-ss-2Cv" firstAttribute="top" secondItem="Hyv-3t-GOc" secondAttribute="bottom" constant="10" id="eWX-cG-cBO"/>
+                            <constraint firstItem="0Cg-Tc-Brz" firstAttribute="top" secondItem="Z8m-ss-2Cv" secondAttribute="bottom" id="jvm-ip-xbi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Hyv-3t-GOc" secondAttribute="trailing" constant="49" id="nQJ-Te-IZd"/>
+                            <constraint firstItem="Hyv-3t-GOc" firstAttribute="leading" secondItem="A3w-8g-VXJ" secondAttribute="leadingMargin" constant="49" id="p2Y-ve-whl"/>
+                            <constraint firstItem="UPG-TQ-lO7" firstAttribute="leading" secondItem="A3w-8g-VXJ" secondAttribute="leadingMargin" constant="-16" id="uDp-5B-zws"/>
+                            <constraint firstItem="r6V-2h-ZEc" firstAttribute="top" secondItem="A3w-8g-VXJ" secondAttribute="topMargin" constant="1" id="x55-YX-kHr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="r6V-2h-ZEc" secondAttribute="trailing" constant="-16" id="z5D-7r-rnR"/>
+                        </constraints>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="260" height="200"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="260" height="200"/>
+                    <connections>
+                        <outlet property="closeBtn" destination="Z8m-ss-2Cv" id="eab-m0-Ofx"/>
+                        <outlet property="recordingImageView" destination="Hyv-3t-GOc" id="Q5s-OH-0Au"/>
+                        <outlet property="saveRecordingBtn" destination="UPG-TQ-lO7" id="AhF-LI-wbt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="emm-Bw-puj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1337" y="-398"/>
+        </scene>
         <!--设置-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController storyboardIdentifier="SettingViewController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8rJ-Kc-sve" customClass="SettingViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8rJ-Kc-sve" customClass="SettingViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="ABa-aX-XgV">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -92,7 +218,7 @@
         <!--About Us View Controller-->
         <scene sceneID="cy4-wd-btR">
             <objects>
-                <viewController storyboardIdentifier="AboutUsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3vO-9B-HFC" customClass="AboutUsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutUsViewController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3vO-9B-HFC" customClass="AboutUsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="V2j-Qr-1Bg"/>
                         <viewControllerLayoutGuide type="bottom" id="JpO-OE-uzi"/>
@@ -463,7 +589,7 @@
         <!--More Share View Controller-->
         <scene sceneID="fkp-fs-0sq">
             <objects>
-                <viewController storyboardIdentifier="MoreShareViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YNG-fo-QbW" customClass="MoreShareViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MoreShareViewController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YNG-fo-QbW" customClass="MoreShareViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ALO-y6-JXS"/>
                         <viewControllerLayoutGuide type="bottom" id="2Ne-Rk-v7A"/>
@@ -578,7 +704,7 @@
         <!--地址分享-->
         <scene sceneID="au2-xy-EmW">
             <objects>
-                <viewController storyboardIdentifier="AddressShareViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ouH-nh-ofl" customClass="AddressShareViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddressShareViewController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ouH-nh-ofl" customClass="AddressShareViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xpp-ua-H4r"/>
                         <viewControllerLayoutGuide type="bottom" id="NNw-o9-XrR"/>
@@ -646,7 +772,7 @@
         <!--个人信息-->
         <scene sceneID="Bq0-SJ-dbp">
             <objects>
-                <viewController storyboardIdentifier="PersonInfoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Vem-cs-fz0" customClass="PersonInfoViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PersonInfoViewController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Vem-cs-fz0" customClass="PersonInfoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Vvx-72-eqI"/>
                         <viewControllerLayoutGuide type="bottom" id="OQx-7U-FTw"/>
@@ -1186,12 +1312,16 @@
         <image name="Login_background.png" width="460" height="800"/>
         <image name="Login_password.png" width="30" height="30"/>
         <image name="Login_user.png" width="30" height="30"/>
+        <image name="Map_Following.png" width="30" height="30"/>
+        <image name="Map_showRoadPicture.png" width="50" height="50"/>
+        <image name="Map_showRoadVoice.png" width="50" height="50"/>
         <image name="Person_ Modifypassword.png" width="24" height="24"/>
         <image name="Person_Address.png" width="24" height="39"/>
         <image name="Person_ModifyInfo.png" width="24" height="24"/>
         <image name="Person_SexBoy.png" width="30" height="30"/>
         <image name="Person_Top.png" width="460" height="250"/>
         <image name="Person_UserIcon.png" width="156" height="156"/>
+        <image name="Speak_Voice1.png" width="210" height="150"/>
         <image name="sinaWeibo.png" width="58" height="58"/>
         <image name="tab_Map.png" width="22" height="31"/>
         <image name="tab_Setting.png" width="32" height="32"/>

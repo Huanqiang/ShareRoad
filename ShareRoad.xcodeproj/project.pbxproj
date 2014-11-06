@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E60657031A08D71F0033A12A /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E60657001A08D71F0033A12A /* libmp3lame.a */; };
+		E60657041A08D71F0033A12A /* RecordingManage.m in Sources */ = {isa = PBXBuildFile; fileRef = E60657021A08D71F0033A12A /* RecordingManage.m */; };
+		E606570D1A08EA390033A12A /* MJPopupBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = E606570A1A08EA390033A12A /* MJPopupBackgroundView.m */; };
+		E606570E1A08EA390033A12A /* UIViewController+MJPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E606570C1A08EA390033A12A /* UIViewController+MJPopupViewController.m */; };
+		E60657111A08EFC60033A12A /* RecordingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E60657101A08EFC60033A12A /* RecordingViewController.m */; };
 		E6783E4919E6C7C2007DF9A2 /* HUD_NO.png in Resources */ = {isa = PBXBuildFile; fileRef = E6783E3A19E6C7C2007DF9A2 /* HUD_NO.png */; };
 		E6783E4A19E6C7C2007DF9A2 /* HUD_NO@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E6783E3B19E6C7C2007DF9A2 /* HUD_NO@2x.png */; };
 		E6783E4B19E6C7C2007DF9A2 /* HUD_YES.png in Resources */ = {isa = PBXBuildFile; fileRef = E6783E3C19E6C7C2007DF9A2 /* HUD_YES.png */; };
@@ -99,6 +104,8 @@
 		E67ED8F719E55F7300E78EA8 /* promptsRing.wav in Resources */ = {isa = PBXBuildFile; fileRef = E67ED8F519E55F7300E78EA8 /* promptsRing.wav */; };
 		E67ED90119E5633300E78EA8 /* RoadMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E67ED90019E5633300E78EA8 /* RoadMapViewController.m */; };
 		E67ED90619E5638500E78EA8 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E67ED90519E5638500E78EA8 /* SettingViewController.m */; };
+		E683FD9A1A08A915007CBB61 /* RoadInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E683FD991A08A915007CBB61 /* RoadInfo.m */; };
+		E683FD9E1A08AEC7007CBB61 /* ShareRoadInfoNetOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E683FD9D1A08AEC7007CBB61 /* ShareRoadInfoNetOperation.m */; };
 		E69544FF1A074F6400D44896 /* QZoneConnection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69544E41A074F6400D44896 /* QZoneConnection.framework */; };
 		E69545001A074F6400D44896 /* SinaWeiboConnection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69544E51A074F6400D44896 /* SinaWeiboConnection.framework */; };
 		E69545011A074F6400D44896 /* TencentWeiboConnection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69544E61A074F6400D44896 /* TencentWeiboConnection.framework */; };
@@ -132,6 +139,13 @@
 		E69806D919E6B4F100B441D7 /* WebServiceClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E69806D819E6B4F100B441D7 /* WebServiceClass.m */; };
 		E69CB5841A04CB6900BC406E /* CLLocation+YCLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = E69CB5821A04CB6900BC406E /* CLLocation+YCLocation.m */; };
 		E69CB5871A04CB9400BC406E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69CB5861A04CB9400BC406E /* CoreLocation.framework */; };
+		E6A9DC921A09C70E0022DB6B /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6A9DC8E1A09C70E0022DB6B /* iflyMSC.framework */; };
+		E6A9DC931A09C70E0022DB6B /* libSunFlower.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6A9DC911A09C70E0022DB6B /* libSunFlower.a */; };
+		E6A9DC951A09C7580022DB6B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6A9DC941A09C7570022DB6B /* AVFoundation.framework */; };
+		E6A9DC971A09C7650022DB6B /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6A9DC961A09C7650022DB6B /* AddressBook.framework */; };
+		E6A9DC991A09C7710022DB6B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6A9DC981A09C7710022DB6B /* AudioToolbox.framework */; };
+		E6A9DC9D1A09CC730022DB6B /* OppositeDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A9DC9C1A09CC730022DB6B /* OppositeDirection.m */; };
+		E6A9DCA11A09CD040022DB6B /* SpeechVideoWithIFlyMSC.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A9DCA01A09CD040022DB6B /* SpeechVideoWithIFlyMSC.m */; };
 		E6ABEAB81A046BEE00A616FE /* BOAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6ABEAB11A046BEE00A616FE /* BOAlertController.m */; };
 		E6ABEAB91A046BEE00A616FE /* RIButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E6ABEAB31A046BEE00A616FE /* RIButtonItem.m */; };
 		E6ABEABA1A046BEE00A616FE /* UIActionSheet+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = E6ABEAB51A046BEE00A616FE /* UIActionSheet+Blocks.m */; };
@@ -171,6 +185,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E60656FF1A08D71F0033A12A /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		E60657001A08D71F0033A12A /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		E60657011A08D71F0033A12A /* RecordingManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordingManage.h; sourceTree = "<group>"; };
+		E60657021A08D71F0033A12A /* RecordingManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordingManage.m; sourceTree = "<group>"; };
+		E60657091A08EA390033A12A /* MJPopupBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPopupBackgroundView.h; sourceTree = "<group>"; };
+		E606570A1A08EA390033A12A /* MJPopupBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPopupBackgroundView.m; sourceTree = "<group>"; };
+		E606570B1A08EA390033A12A /* UIViewController+MJPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MJPopupViewController.h"; sourceTree = "<group>"; };
+		E606570C1A08EA390033A12A /* UIViewController+MJPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MJPopupViewController.m"; sourceTree = "<group>"; };
+		E606570F1A08EFC60033A12A /* RecordingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecordingViewController.h; path = Controller/RecordingViewController.h; sourceTree = "<group>"; };
+		E60657101A08EFC60033A12A /* RecordingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecordingViewController.m; path = Controller/RecordingViewController.m; sourceTree = "<group>"; };
 		E6783E3A19E6C7C2007DF9A2 /* HUD_NO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HUD_NO.png; sourceTree = "<group>"; };
 		E6783E3B19E6C7C2007DF9A2 /* HUD_NO@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HUD_NO@2x.png"; sourceTree = "<group>"; };
 		E6783E3C19E6C7C2007DF9A2 /* HUD_YES.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HUD_YES.png; sourceTree = "<group>"; };
@@ -276,6 +300,11 @@
 		E67ED90019E5633300E78EA8 /* RoadMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoadMapViewController.m; sourceTree = "<group>"; };
 		E67ED90419E5638500E78EA8 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		E67ED90519E5638500E78EA8 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		E683FD981A08A915007CBB61 /* RoadInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoadInfo.h; path = Controller/RoadInfo.h; sourceTree = "<group>"; };
+		E683FD991A08A915007CBB61 /* RoadInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoadInfo.m; path = Controller/RoadInfo.m; sourceTree = "<group>"; };
+		E683FD9C1A08AEC7007CBB61 /* ShareRoadInfoNetOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShareRoadInfoNetOperation.h; path = Controller/ShareRoadInfoNetOperation.h; sourceTree = "<group>"; };
+		E683FD9D1A08AEC7007CBB61 /* ShareRoadInfoNetOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShareRoadInfoNetOperation.m; path = Controller/ShareRoadInfoNetOperation.m; sourceTree = "<group>"; };
+		E683FD9F1A08AFBB007CBB61 /* ShareRoadInfoDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShareRoadInfoDelegate.h; path = Controller/ShareRoadInfoDelegate.h; sourceTree = "<group>"; };
 		E69544E41A074F6400D44896 /* QZoneConnection.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QZoneConnection.framework; sourceTree = "<group>"; };
 		E69544E51A074F6400D44896 /* SinaWeiboConnection.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SinaWeiboConnection.framework; sourceTree = "<group>"; };
 		E69544E61A074F6400D44896 /* TencentWeiboConnection.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentWeiboConnection.framework; sourceTree = "<group>"; };
@@ -323,6 +352,16 @@
 		E69CB5811A04CB6900BC406E /* CLLocation+YCLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+YCLocation.h"; sourceTree = "<group>"; };
 		E69CB5821A04CB6900BC406E /* CLLocation+YCLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+YCLocation.m"; sourceTree = "<group>"; };
 		E69CB5861A04CB9400BC406E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E6A9DC8E1A09C70E0022DB6B /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iflyMSC.framework; sourceTree = "<group>"; };
+		E6A9DC901A09C70E0022DB6B /* IFlyFlowerCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFlyFlowerCollector.h; sourceTree = "<group>"; };
+		E6A9DC911A09C70E0022DB6B /* libSunFlower.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSunFlower.a; sourceTree = "<group>"; };
+		E6A9DC941A09C7570022DB6B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E6A9DC961A09C7650022DB6B /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		E6A9DC981A09C7710022DB6B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E6A9DC9B1A09CC730022DB6B /* OppositeDirection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OppositeDirection.h; sourceTree = "<group>"; };
+		E6A9DC9C1A09CC730022DB6B /* OppositeDirection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OppositeDirection.m; sourceTree = "<group>"; };
+		E6A9DC9F1A09CD040022DB6B /* SpeechVideoWithIFlyMSC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpeechVideoWithIFlyMSC.h; path = Controller/SpeechVideoWithIFlyMSC.h; sourceTree = "<group>"; };
+		E6A9DCA01A09CD040022DB6B /* SpeechVideoWithIFlyMSC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpeechVideoWithIFlyMSC.m; path = Controller/SpeechVideoWithIFlyMSC.m; sourceTree = "<group>"; };
 		E6ABEAB01A046BEE00A616FE /* BOAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOAlertController.h; sourceTree = "<group>"; };
 		E6ABEAB11A046BEE00A616FE /* BOAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOAlertController.m; sourceTree = "<group>"; };
 		E6ABEAB21A046BEE00A616FE /* RIButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIButtonItem.h; sourceTree = "<group>"; };
@@ -433,10 +472,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6A9DC991A09C7710022DB6B /* AudioToolbox.framework in Frameworks */,
+				E6A9DC971A09C7650022DB6B /* AddressBook.framework in Frameworks */,
+				E6A9DC951A09C7580022DB6B /* AVFoundation.framework in Frameworks */,
 				E6D237961A07946C000AA86E /* UIKit.framework in Frameworks */,
 				E6D237941A079465000AA86E /* Foundation.framework in Frameworks */,
 				E6D237921A07945D000AA86E /* libz.dylib in Frameworks */,
 				E69545191A07500700D44896 /* Security.framework in Frameworks */,
+				E6A9DC931A09C70E0022DB6B /* libSunFlower.a in Frameworks */,
 				E6D237901A079449000AA86E /* CoreGraphics.framework in Frameworks */,
 				E6D2378E1A079442000AA86E /* CoreFoundation.framework in Frameworks */,
 				E6D2378C1A079438000AA86E /* CFNetwork.framework in Frameworks */,
@@ -447,9 +490,11 @@
 				E69545151A074FF800D44896 /* libicucore.dylib in Frameworks */,
 				E69545131A074FF100D44896 /* CoreTelephony.framework in Frameworks */,
 				E69545111A074FEB00D44896 /* QuartzCore.framework in Frameworks */,
+				E60657031A08D71F0033A12A /* libmp3lame.a in Frameworks */,
 				E695450F1A074FE400D44896 /* SystemConfiguration.framework in Frameworks */,
 				E695450B1A074F6500D44896 /* libTCWeiboSDK.a in Frameworks */,
 				E69545011A074F6400D44896 /* TencentWeiboConnection.framework in Frameworks */,
+				E6A9DC921A09C70E0022DB6B /* iflyMSC.framework in Frameworks */,
 				E69CB5871A04CB9400BC406E /* CoreLocation.framework in Frameworks */,
 				E695450C1A074F6500D44896 /* libWeChatSDK.a in Frameworks */,
 				E69545021A074F6400D44896 /* WeChatConnection.framework in Frameworks */,
@@ -474,6 +519,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E60656F91A08D5A90033A12A /* RecordingView */ = {
+			isa = PBXGroup;
+			children = (
+				E606570F1A08EFC60033A12A /* RecordingViewController.h */,
+				E60657101A08EFC60033A12A /* RecordingViewController.m */,
+			);
+			name = RecordingView;
+			sourceTree = "<group>";
+		};
+		E60656FD1A08D71F0033A12A /* RecordingManage */ = {
+			isa = PBXGroup;
+			children = (
+				E60656FE1A08D71F0033A12A /* lame */,
+				E60657011A08D71F0033A12A /* RecordingManage.h */,
+				E60657021A08D71F0033A12A /* RecordingManage.m */,
+			);
+			name = RecordingManage;
+			path = AdditionFunction/RecordingManage;
+			sourceTree = SOURCE_ROOT;
+		};
+		E60656FE1A08D71F0033A12A /* lame */ = {
+			isa = PBXGroup;
+			children = (
+				E60656FF1A08D71F0033A12A /* lame.h */,
+				E60657001A08D71F0033A12A /* libmp3lame.a */,
+			);
+			path = lame;
+			sourceTree = "<group>";
+		};
+		E60657081A08EA390033A12A /* PopView */ = {
+			isa = PBXGroup;
+			children = (
+				E60657091A08EA390033A12A /* MJPopupBackgroundView.h */,
+				E606570A1A08EA390033A12A /* MJPopupBackgroundView.m */,
+				E606570B1A08EA390033A12A /* UIViewController+MJPopupViewController.h */,
+				E606570C1A08EA390033A12A /* UIViewController+MJPopupViewController.m */,
+			);
+			name = PopView;
+			path = AdditionFunction/PopView;
+			sourceTree = SOURCE_ROOT;
+		};
 		E6783E3919E6C7C2007DF9A2 /* YzdHUD */ = {
 			isa = PBXGroup;
 			children = (
@@ -509,6 +595,9 @@
 		E67ED82819E55B3A00E78EA8 = {
 			isa = PBXGroup;
 			children = (
+				E6A9DC981A09C7710022DB6B /* AudioToolbox.framework */,
+				E6A9DC961A09C7650022DB6B /* AddressBook.framework */,
+				E6A9DC941A09C7570022DB6B /* AVFoundation.framework */,
 				E6D237951A07946C000AA86E /* UIKit.framework */,
 				E6D237931A079465000AA86E /* Foundation.framework */,
 				E6D237911A07945D000AA86E /* libz.dylib */,
@@ -704,6 +793,10 @@
 		E67ED8F819E55F9200E78EA8 /* AdditionFunction */ = {
 			isa = PBXGroup;
 			children = (
+				E6A9DC9A1A09CC730022DB6B /* OppositeDirection */,
+				E6A9DC8D1A09C70E0022DB6B /* IFlyMSC_lib */,
+				E60657081A08EA390033A12A /* PopView */,
+				E60656FD1A08D71F0033A12A /* RecordingManage */,
 				E6D237871A079429000AA86E /* JPush_lib */,
 				E69544E21A074F6400D44896 /* ShareSDK */,
 				E69CB5801A04CB6900BC406E /* location */,
@@ -747,6 +840,9 @@
 		E67ED90219E5633700E78EA8 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				E6A9DC9E1A09CCCB0022DB6B /* IFlyMSCVideo */,
+				E60656F91A08D5A90033A12A /* RecordingView */,
+				E683FD9B1A08AE89007CBB61 /* ShareRoadInfoNetOperation */,
 				E67ED8FF19E5633300E78EA8 /* RoadMapViewController.h */,
 				E67ED90019E5633300E78EA8 /* RoadMapViewController.m */,
 			);
@@ -756,7 +852,6 @@
 		E67ED90319E5634B00E78EA8 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				E6E7F89D19E661A600CF9510 /* BaseViewController */,
 				E6E7F8B519E6638F00CF9510 /* LoginAndSign */,
 				E6E7F89C19E6619800CF9510 /* AboutUs */,
 				E6E7F89B19E6618B00CF9510 /* MoreShareSetting */,
@@ -766,6 +861,16 @@
 				E67ED90519E5638500E78EA8 /* SettingViewController.m */,
 			);
 			name = Setting;
+			sourceTree = "<group>";
+		};
+		E683FD9B1A08AE89007CBB61 /* ShareRoadInfoNetOperation */ = {
+			isa = PBXGroup;
+			children = (
+				E683FD9F1A08AFBB007CBB61 /* ShareRoadInfoDelegate.h */,
+				E683FD9C1A08AEC7007CBB61 /* ShareRoadInfoNetOperation.h */,
+				E683FD9D1A08AEC7007CBB61 /* ShareRoadInfoNetOperation.m */,
+			);
+			name = ShareRoadInfoNetOperation;
 			sourceTree = "<group>";
 		};
 		E69544E21A074F6400D44896 /* ShareSDK */ = {
@@ -894,6 +999,44 @@
 			path = AdditionFunction/location;
 			sourceTree = SOURCE_ROOT;
 		};
+		E6A9DC8D1A09C70E0022DB6B /* IFlyMSC_lib */ = {
+			isa = PBXGroup;
+			children = (
+				E6A9DC8E1A09C70E0022DB6B /* iflyMSC.framework */,
+				E6A9DC8F1A09C70E0022DB6B /* sunflower */,
+			);
+			name = IFlyMSC_lib;
+			path = AdditionFunction/IFlyMSC_lib;
+			sourceTree = SOURCE_ROOT;
+		};
+		E6A9DC8F1A09C70E0022DB6B /* sunflower */ = {
+			isa = PBXGroup;
+			children = (
+				E6A9DC901A09C70E0022DB6B /* IFlyFlowerCollector.h */,
+				E6A9DC911A09C70E0022DB6B /* libSunFlower.a */,
+			);
+			path = sunflower;
+			sourceTree = "<group>";
+		};
+		E6A9DC9A1A09CC730022DB6B /* OppositeDirection */ = {
+			isa = PBXGroup;
+			children = (
+				E6A9DC9B1A09CC730022DB6B /* OppositeDirection.h */,
+				E6A9DC9C1A09CC730022DB6B /* OppositeDirection.m */,
+			);
+			name = OppositeDirection;
+			path = AdditionFunction/OppositeDirection;
+			sourceTree = SOURCE_ROOT;
+		};
+		E6A9DC9E1A09CCCB0022DB6B /* IFlyMSCVideo */ = {
+			isa = PBXGroup;
+			children = (
+				E6A9DC9F1A09CD040022DB6B /* SpeechVideoWithIFlyMSC.h */,
+				E6A9DCA01A09CD040022DB6B /* SpeechVideoWithIFlyMSC.m */,
+			);
+			name = IFlyMSCVideo;
+			sourceTree = "<group>";
+		};
 		E6ABEAAF1A046BEE00A616FE /* UIAlertView_ActionSheet */ = {
 			isa = PBXGroup;
 			children = (
@@ -1004,6 +1147,8 @@
 			children = (
 				E6BA94011A03B701000C7386 /* UserInfo.h */,
 				E6BA94021A03B701000C7386 /* UserInfo.m */,
+				E683FD981A08A915007CBB61 /* RoadInfo.h */,
+				E683FD991A08A915007CBB61 /* RoadInfo.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -1075,6 +1220,7 @@
 		E6E7F89E19E661D500CF9510 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E6E7F89D19E661A600CF9510 /* BaseViewController */,
 				E6BA94001A03B6E4000C7386 /* Model */,
 				E67ED90319E5634B00E78EA8 /* Setting */,
 				E67ED90219E5633700E78EA8 /* Map */,
@@ -1288,6 +1434,7 @@
 			files = (
 				E6783E4E19E6C7C2007DF9A2 /* YzdHUDBackgroundView.m in Sources */,
 				E6D403301A05D41C00B5627F /* BaseNeedLogInViewController.m in Sources */,
+				E60657111A08EFC60033A12A /* RecordingViewController.m in Sources */,
 				E67ED83A19E55B3A00E78EA8 /* AppDelegate.m in Sources */,
 				E69545361A07630600D44896 /* PlatformShare.m in Sources */,
 				E6783E4F19E6C7C2007DF9A2 /* YzdHUDImageView.m in Sources */,
@@ -1296,6 +1443,8 @@
 				E69CB5841A04CB6900BC406E /* CLLocation+YCLocation.m in Sources */,
 				E6E7F8B419E6636700CF9510 /* PersonInfoViewController.m in Sources */,
 				E6ABEAB81A046BEE00A616FE /* BOAlertController.m in Sources */,
+				E683FD9A1A08A915007CBB61 /* RoadInfo.m in Sources */,
+				E683FD9E1A08AEC7007CBB61 /* ShareRoadInfoNetOperation.m in Sources */,
 				E6E7F8C119E6691000CF9510 /* BaseViewController.m in Sources */,
 				E6783E5619E6CAF3007DF9A2 /* LogInToolClass.m in Sources */,
 				E6E7F8B819E663A500CF9510 /* LogInViewController.m in Sources */,
@@ -1308,14 +1457,19 @@
 				E69545391A077CCD00D44896 /* FeedbackContextViewController.m in Sources */,
 				E6783E4D19E6C7C2007DF9A2 /* UIWindow+YzdHUD.m in Sources */,
 				E6E7F8BE19E663D300CF9510 /* RegisteredViewController.m in Sources */,
+				E606570D1A08EA390033A12A /* MJPopupBackgroundView.m in Sources */,
 				E6783E5019E6C7C2007DF9A2 /* YzdHUDIndicator.m in Sources */,
 				E6DC3FED1A06724A00880B3B /* UpdatePersonPasswordViewController.m in Sources */,
+				E60657041A08D71F0033A12A /* RecordingManage.m in Sources */,
 				E6783E5119E6C7C2007DF9A2 /* YzdHUDLabel.m in Sources */,
 				E69806D919E6B4F100B441D7 /* WebServiceClass.m in Sources */,
 				E67ED83719E55B3A00E78EA8 /* main.m in Sources */,
+				E606570E1A08EA390033A12A /* UIViewController+MJPopupViewController.m in Sources */,
 				E69545221A0754AC00D44896 /* MoreShareTableViewCell.m in Sources */,
+				E6A9DC9D1A09CC730022DB6B /* OppositeDirection.m in Sources */,
 				E6E7F8A819E6630900CF9510 /* AboutUsViewController.m in Sources */,
 				E67ED90119E5633300E78EA8 /* RoadMapViewController.m in Sources */,
+				E6A9DCA11A09CD040022DB6B /* SpeechVideoWithIFlyMSC.m in Sources */,
 				E67ED90619E5638500E78EA8 /* SettingViewController.m in Sources */,
 				E6E7F8AE19E6633700CF9510 /* AddressShareViewController.m in Sources */,
 				E69545321A075E1500D44896 /* ShareContentWithShareSDK.m in Sources */,
@@ -1387,7 +1541,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: huanqiang wang (RE27TGSB78)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: huanqiang wang (RE27TGSB78)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1428,7 +1583,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: huanqiang wang (RE27TGSB78)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: huanqiang wang (RE27TGSB78)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1451,7 +1607,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: huanqiang wang (RE27TGSB78)";
 				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1459,24 +1615,27 @@
 					"$(PROJECT_DIR)/AdditionFunction/ShareSDK/Core",
 					"$(PROJECT_DIR)/AdditionFunction/ShareSDK/Extend/QQConnectSDK",
 					"$(PROJECT_DIR)/AdditionFunction/ShareSDK",
+					"$(PROJECT_DIR)/AdditionFunction/IFlyMSC_lib",
 				);
 				INFOPLIST_FILE = ShareRoad/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/AdditionFunction/JPush",
 					"$(PROJECT_DIR)/AdditionFunction/BaiduMap",
 					"$(PROJECT_DIR)/AdditionFunction/ShareSDK/Extend/SinaWeiboSDK",
 					"$(PROJECT_DIR)/AdditionFunction/ShareSDK/Extend/TencentWeiboSDK",
 					"$(PROJECT_DIR)/AdditionFunction/ShareSDK/Extend/WeChatSDK",
 					"$(PROJECT_DIR)/AdditionFunction/JPush_lib",
+					"$(PROJECT_DIR)/AdditionFunction/RecordingManage/lame",
+					"$(PROJECT_DIR)/AdditionFunction/IFlyMSC_lib/sunflower",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_MODULE_NAME = ShareRoadWithSwf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ShareRoad/ShareRoad-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/AdditionFunction/JPush";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/AdditionFunction/JPush_lib";
 			};
 			name = Debug;
 		};
@@ -1485,7 +1644,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: huanqiang wang (RE27TGSB78)";
 				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1493,23 +1652,26 @@
 					"$(PROJECT_DIR)/AdditionFunction/ShareSDK/Core",
 					"$(PROJECT_DIR)/AdditionFunction/ShareSDK/Extend/QQConnectSDK",
 					"$(PROJECT_DIR)/AdditionFunction/ShareSDK",
+					"$(PROJECT_DIR)/AdditionFunction/IFlyMSC_lib",
 				);
 				INFOPLIST_FILE = ShareRoad/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/AdditionFunction/JPush",
 					"$(PROJECT_DIR)/AdditionFunction/BaiduMap",
 					"$(PROJECT_DIR)/AdditionFunction/ShareSDK/Extend/SinaWeiboSDK",
 					"$(PROJECT_DIR)/AdditionFunction/ShareSDK/Extend/TencentWeiboSDK",
 					"$(PROJECT_DIR)/AdditionFunction/ShareSDK/Extend/WeChatSDK",
 					"$(PROJECT_DIR)/AdditionFunction/JPush_lib",
+					"$(PROJECT_DIR)/AdditionFunction/RecordingManage/lame",
+					"$(PROJECT_DIR)/AdditionFunction/IFlyMSC_lib/sunflower",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_MODULE_NAME = ShareRoadWithSwf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ShareRoad/ShareRoad-Bridging-Header.h";
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/AdditionFunction/JPush";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/AdditionFunction/JPush_lib";
 			};
 			name = Release;
 		};

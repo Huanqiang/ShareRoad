@@ -147,12 +147,14 @@ static int count = 0;
 - (NSString *)getImageURLString:(NSString *)imageName {
     //这里将图片放在沙盒的documents文件夹中
     NSString * DocumentsPath = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
-    
+    NSString *subdir = [DocumentsPath stringByAppendingPathComponent:@"RoadInfo"];//RoadInfo就是你创建的文件夹名
     //得到选择后沙盒中图片的完整路径
-    NSString *imagePath = [[NSString alloc]initWithFormat:@"%@%@",DocumentsPath,  [NSString stringWithFormat:@"/%@",imageName]];
+    NSString *imagePath = [[NSString alloc]initWithFormat:@"%@%@",subdir,  [NSString stringWithFormat:@"/%@",imageName]];
+    
     
     return imagePath;
 }
+
 
 - (NSDictionary *)getImageWithImageName:(NSString *)imageName {
     NSData *imageData = [[NSData alloc] init];

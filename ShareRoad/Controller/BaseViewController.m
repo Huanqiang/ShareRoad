@@ -8,10 +8,6 @@
 
 #import "BaseViewController.h"
 
-#define WebServiceURL @"http://dream-001.xicp.net:5010"
-#define WebServiceFile @"/RoadInfService.asmx"
-#define WebServiceXmlNameSpace @"http://tempuri.org/"
-
 @interface BaseViewController ()
 
 @end

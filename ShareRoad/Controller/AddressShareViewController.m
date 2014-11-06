@@ -56,7 +56,7 @@
             }];
         }else {
             [self showAlertView:@"抱歉" msg:@"请不要给自己分享地址" delegate:self];
-        }        
+        }
     }else {
         [self showAlertView:@"抱歉" msg:@"请填写对方手机号" delegate:self];
     }
