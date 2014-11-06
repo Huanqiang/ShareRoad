@@ -8,6 +8,7 @@
 
 #import "BaseViewController.h"
 #import "FeedbackContextViewController.h"
+#import "StartViewController.h"
 
 @interface AboutUsViewController : BaseViewController<UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *mainTableView;

@@ -15,7 +15,7 @@
 #import "CustomToolClass.h"
 #import "APService.h"
 
-#define MyAppKey @"1234567"
+#define MyAppID @"916685426"
 
 #define WebServiceURL @"http://58.64.188.207:8003"
 #define WebServiceFile @"/RoadInfService.asmx"

@@ -146,6 +146,13 @@
 		E6A9DC991A09C7710022DB6B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6A9DC981A09C7710022DB6B /* AudioToolbox.framework */; };
 		E6A9DC9D1A09CC730022DB6B /* OppositeDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A9DC9C1A09CC730022DB6B /* OppositeDirection.m */; };
 		E6A9DCA11A09CD040022DB6B /* SpeechVideoWithIFlyMSC.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A9DCA01A09CD040022DB6B /* SpeechVideoWithIFlyMSC.m */; };
+		E6A9F7C61A0BB02A009A4373 /* EAIntroPage.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A9F7C31A0BB02A009A4373 /* EAIntroPage.m */; };
+		E6A9F7C71A0BB02A009A4373 /* EAIntroView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A9F7C51A0BB02A009A4373 /* EAIntroView.m */; };
+		E6A9F7CB1A0BB050009A4373 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A9F7CA1A0BB050009A4373 /* StartViewController.m */; };
+		E6A9F7D11A0BB40D009A4373 /* Start_BgImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E6A9F7CD1A0BB40D009A4373 /* Start_BgImage.jpg */; };
+		E6A9F7D21A0BB40D009A4373 /* StartImage1.png in Resources */ = {isa = PBXBuildFile; fileRef = E6A9F7CE1A0BB40D009A4373 /* StartImage1.png */; };
+		E6A9F7D31A0BB40D009A4373 /* StartImage2.png in Resources */ = {isa = PBXBuildFile; fileRef = E6A9F7CF1A0BB40D009A4373 /* StartImage2.png */; };
+		E6A9F7D41A0BB40D009A4373 /* StartImage3.png in Resources */ = {isa = PBXBuildFile; fileRef = E6A9F7D01A0BB40D009A4373 /* StartImage3.png */; };
 		E6ABEAB81A046BEE00A616FE /* BOAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6ABEAB11A046BEE00A616FE /* BOAlertController.m */; };
 		E6ABEAB91A046BEE00A616FE /* RIButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E6ABEAB31A046BEE00A616FE /* RIButtonItem.m */; };
 		E6ABEABA1A046BEE00A616FE /* UIActionSheet+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = E6ABEAB51A046BEE00A616FE /* UIActionSheet+Blocks.m */; };
@@ -362,6 +369,16 @@
 		E6A9DC9C1A09CC730022DB6B /* OppositeDirection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OppositeDirection.m; sourceTree = "<group>"; };
 		E6A9DC9F1A09CD040022DB6B /* SpeechVideoWithIFlyMSC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpeechVideoWithIFlyMSC.h; path = Controller/SpeechVideoWithIFlyMSC.h; sourceTree = "<group>"; };
 		E6A9DCA01A09CD040022DB6B /* SpeechVideoWithIFlyMSC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpeechVideoWithIFlyMSC.m; path = Controller/SpeechVideoWithIFlyMSC.m; sourceTree = "<group>"; };
+		E6A9F7C21A0BB02A009A4373 /* EAIntroPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAIntroPage.h; sourceTree = "<group>"; };
+		E6A9F7C31A0BB02A009A4373 /* EAIntroPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAIntroPage.m; sourceTree = "<group>"; };
+		E6A9F7C41A0BB02A009A4373 /* EAIntroView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAIntroView.h; sourceTree = "<group>"; };
+		E6A9F7C51A0BB02A009A4373 /* EAIntroView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAIntroView.m; sourceTree = "<group>"; };
+		E6A9F7C91A0BB050009A4373 /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StartViewController.h; path = Controller/StartViewController.h; sourceTree = "<group>"; };
+		E6A9F7CA1A0BB050009A4373 /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StartViewController.m; path = Controller/StartViewController.m; sourceTree = "<group>"; };
+		E6A9F7CD1A0BB40D009A4373 /* Start_BgImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Start_BgImage.jpg; sourceTree = "<group>"; };
+		E6A9F7CE1A0BB40D009A4373 /* StartImage1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StartImage1.png; sourceTree = "<group>"; };
+		E6A9F7CF1A0BB40D009A4373 /* StartImage2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StartImage2.png; sourceTree = "<group>"; };
+		E6A9F7D01A0BB40D009A4373 /* StartImage3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StartImage3.png; sourceTree = "<group>"; };
 		E6ABEAB01A046BEE00A616FE /* BOAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOAlertController.h; sourceTree = "<group>"; };
 		E6ABEAB11A046BEE00A616FE /* BOAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOAlertController.m; sourceTree = "<group>"; };
 		E6ABEAB21A046BEE00A616FE /* RIButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIButtonItem.h; sourceTree = "<group>"; };
@@ -675,6 +692,7 @@
 		E67ED85D19E55E3D00E78EA8 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				E6A9F7CC1A0BB3FE009A4373 /* startView */,
 				E67ED8FE19E562DA00E78EA8 /* Launch */,
 				E67ED8FD19E562CF00E78EA8 /* Icon */,
 				E67ED8E219E55F4000E78EA8 /* RecordingImage */,
@@ -793,6 +811,7 @@
 		E67ED8F819E55F9200E78EA8 /* AdditionFunction */ = {
 			isa = PBXGroup;
 			children = (
+				E6A9F7C11A0BB02A009A4373 /* EAIntroView */,
 				E6A9DC9A1A09CC730022DB6B /* OppositeDirection */,
 				E6A9DC8D1A09C70E0022DB6B /* IFlyMSC_lib */,
 				E60657081A08EA390033A12A /* PopView */,
@@ -1037,6 +1056,38 @@
 			name = IFlyMSCVideo;
 			sourceTree = "<group>";
 		};
+		E6A9F7C11A0BB02A009A4373 /* EAIntroView */ = {
+			isa = PBXGroup;
+			children = (
+				E6A9F7C21A0BB02A009A4373 /* EAIntroPage.h */,
+				E6A9F7C31A0BB02A009A4373 /* EAIntroPage.m */,
+				E6A9F7C41A0BB02A009A4373 /* EAIntroView.h */,
+				E6A9F7C51A0BB02A009A4373 /* EAIntroView.m */,
+			);
+			name = EAIntroView;
+			path = AdditionFunction/EAIntroView;
+			sourceTree = SOURCE_ROOT;
+		};
+		E6A9F7C81A0BB03E009A4373 /* StartView */ = {
+			isa = PBXGroup;
+			children = (
+				E6A9F7C91A0BB050009A4373 /* StartViewController.h */,
+				E6A9F7CA1A0BB050009A4373 /* StartViewController.m */,
+			);
+			name = StartView;
+			sourceTree = "<group>";
+		};
+		E6A9F7CC1A0BB3FE009A4373 /* startView */ = {
+			isa = PBXGroup;
+			children = (
+				E6A9F7CD1A0BB40D009A4373 /* Start_BgImage.jpg */,
+				E6A9F7CE1A0BB40D009A4373 /* StartImage1.png */,
+				E6A9F7CF1A0BB40D009A4373 /* StartImage2.png */,
+				E6A9F7D01A0BB40D009A4373 /* StartImage3.png */,
+			);
+			name = startView;
+			sourceTree = "<group>";
+		};
 		E6ABEAAF1A046BEE00A616FE /* UIAlertView_ActionSheet */ = {
 			isa = PBXGroup;
 			children = (
@@ -1220,6 +1271,7 @@
 		E6E7F89E19E661D500CF9510 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E6A9F7C81A0BB03E009A4373 /* StartView */,
 				E6E7F89D19E661A600CF9510 /* BaseViewController */,
 				E6BA94001A03B6E4000C7386 /* Model */,
 				E67ED90319E5634B00E78EA8 /* Setting */,
@@ -1335,6 +1387,7 @@
 				E67ED87C19E55E7500E78EA8 /* Icon@2x.png in Resources */,
 				E69545041A074F6400D44896 /* ShareSDKLocalizable.strings in Resources */,
 				E67ED8EE19E55F5400E78EA8 /* Speak_Voice2@2x.png in Resources */,
+				E6A9F7D11A0BB40D009A4373 /* Start_BgImage.jpg in Resources */,
 				E67ED8AF19E55EF800E78EA8 /* tab_Map@2x.png in Resources */,
 				E67ED8CA19E55F2000E78EA8 /* Person_ModifyInfo@2x.png in Resources */,
 				E67ED84319E55B3A00E78EA8 /* Main.storyboard in Resources */,
@@ -1356,6 +1409,7 @@
 				E67ED8DB19E55F3400E78EA8 /* Login_APPIcon@2x.png in Resources */,
 				E67ED8C619E55F2000E78EA8 /* Person_ Modifypassword@2x.png in Resources */,
 				E67ED8C419E55F2000E78EA8 /* Person_UserIcon@2x.png in Resources */,
+				E6A9F7D21A0BB40D009A4373 /* StartImage1.png in Resources */,
 				E67ED8EB19E55F5400E78EA8 /* Speak_Voice1.png in Resources */,
 				E67ED8DF19E55F3400E78EA8 /* Login_password@2x.png in Resources */,
 				E6D403321A05D8FB00B5627F /* setting_return.png in Resources */,
@@ -1371,6 +1425,7 @@
 				E67ED8A419E55EBB00E78EA8 /* Map_FollowHeading@2x.png in Resources */,
 				E67ED87119E55E7500E78EA8 /* Icon_180.png in Resources */,
 				E67ED8A219E55EBB00E78EA8 /* Map_compass@2x.png in Resources */,
+				E6A9F7D31A0BB40D009A4373 /* StartImage2.png in Resources */,
 				E67ED89C19E55EBB00E78EA8 /* Map_showRoadPicture@2x.png in Resources */,
 				E67ED87319E55E7500E78EA8 /* Icon_120.png in Resources */,
 				E67ED8A719E55EBB00E78EA8 /* Map_showTrafficOff.png in Resources */,
@@ -1414,6 +1469,7 @@
 				E67ED87519E55E7500E78EA8 /* alert_tButton.png in Resources */,
 				E67ED86F19E55E7500E78EA8 /* launch_750.png in Resources */,
 				E67ED8DA19E55F3400E78EA8 /* Login_APPIcon.png in Resources */,
+				E6A9F7D41A0BB40D009A4373 /* StartImage3.png in Resources */,
 				E67ED89A19E55EBB00E78EA8 /* Map_ChangedMapType2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1441,8 +1497,10 @@
 				E695452C1A0758F600D44896 /* PlatformShareFactory.m in Sources */,
 				E6ABEAB91A046BEE00A616FE /* RIButtonItem.m in Sources */,
 				E69CB5841A04CB6900BC406E /* CLLocation+YCLocation.m in Sources */,
+				E6A9F7C61A0BB02A009A4373 /* EAIntroPage.m in Sources */,
 				E6E7F8B419E6636700CF9510 /* PersonInfoViewController.m in Sources */,
 				E6ABEAB81A046BEE00A616FE /* BOAlertController.m in Sources */,
+				E6A9F7CB1A0BB050009A4373 /* StartViewController.m in Sources */,
 				E683FD9A1A08A915007CBB61 /* RoadInfo.m in Sources */,
 				E683FD9E1A08AEC7007CBB61 /* ShareRoadInfoNetOperation.m in Sources */,
 				E6E7F8C119E6691000CF9510 /* BaseViewController.m in Sources */,
@@ -1452,6 +1510,7 @@
 				E6ABEABB1A046BEE00A616FE /* UIAlertView+Blocks.m in Sources */,
 				E6ABEABA1A046BEE00A616FE /* UIActionSheet+Blocks.m in Sources */,
 				E6E7F8B119E6635200CF9510 /* MoreShareViewController.m in Sources */,
+				E6A9F7C71A0BB02A009A4373 /* EAIntroView.m in Sources */,
 				E695452F1A07591000D44896 /* WeiboShare.m in Sources */,
 				E6BA94031A03B701000C7386 /* UserInfo.m in Sources */,
 				E69545391A077CCD00D44896 /* FeedbackContextViewController.m in Sources */,

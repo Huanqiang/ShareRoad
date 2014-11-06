@@ -55,6 +55,8 @@
     [self startLocation];
     //初始化地理反编码
     geocodesearch = [[BMKGeoCodeSearch alloc] init];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(addPointAnnotationForAPNS:) name:@"pushAPNS" object:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -166,6 +168,19 @@
 }
 
 #pragma mark - 标注
+
+- (void)addPointAnnotationForAPNS:(NSNotification *) notification {
+    NSDictionary *dic = [notification object];
+    
+    RoadInfo *roadInfo = [[RoadInfo alloc] init];
+    roadInfo.coordinate = CLLocationCoordinate2DMake([[dic objectForKey:@"La"] floatValue], [[dic objectForKey:@"Lo"] floatValue]);
+    roadInfo.address = [NSString stringWithFormat:@"这是%@分享给您的路况信息\n地址：%@", [dic objectForKey:@"name"],[dic objectForKey:@"address"]];
+    roadInfo.fileType = @"3";
+    roadInfo.fileName = @"APNS.txt";
+    [baiduMapView setCenterCoordinate:roadInfo.coordinate animated:YES];
+    [self addPointAnnotation:roadInfo];
+}
+
 //添加标注:传入经纬度
 - (void)addPointAnnotation:(RoadInfo *)roadInfo {
     BMKPointAnnotation *pointAnnotation = [[BMKPointAnnotation alloc]init];

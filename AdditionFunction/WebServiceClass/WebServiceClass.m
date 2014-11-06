@@ -105,7 +105,7 @@ static WebServiceClass *instnce;
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@", webURL, wsFile]];
 	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     request.timeoutInterval = 10;
-	NSString *msgLength = [NSString stringWithFormat:@"%d", [soapMessage length]];
+	NSString *msgLength = [NSString stringWithFormat:@"%lu", (unsigned long)[soapMessage length]];
 	
 	//以下对请求信息添加属性前四句是必有的，第五句是soap信息。
 	[request addValue: @"application/soap+xml; charset=utf-8" forHTTPHeaderField:@"Content-Type"];

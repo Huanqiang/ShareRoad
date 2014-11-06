@@ -54,11 +54,11 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (indexPath.row == 0) {
-//        SRStartViewController * startViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"startViewController"];
-//        startViewController.login = @"1";
-//        [self presentViewController:startViewController animated:YES completion:nil];
+        StartViewController * startViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"StartViewController"];
+        startViewController.login = @"1";
+        [self presentViewController:startViewController animated:YES completion:nil];
     }else if(indexPath.row == 1) {
-        [[CustomToolClass shareInstance] gotoGrade:MyAppKey];
+        [[CustomToolClass shareInstance] gotoGrade:MyAppID];
     }else if(indexPath.row == 2) {
         FeedbackContextViewController *feedbackContextViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"FeedbackContextViewController"];
         [self.navigationController pushViewController:feedbackContextViewController animated:YES];
