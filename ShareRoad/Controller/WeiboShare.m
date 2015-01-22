@@ -29,4 +29,10 @@
     return isAuth;
 }
 
+- (void)shareContext:(NSString *)publishString AndPublishImage:(UIImage *)publishImage  AndDealWithData:(dealWithShareContentDataBlock )dateBlock {
+    [[ShareContentWithShareSDK shareInstance] shareContent:@"我正在使用“路况知音”APP" AndPublishImage:publishImage AndSharePlatformType:ShareTypeSinaWeibo AndDealWithData:^{
+        dateBlock();
+    }];
+}
+
 @end

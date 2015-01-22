@@ -7,6 +7,7 @@
 //
 
 #import "BaseNeedLogInViewController.h"
+#import "BMapKit.h"
 #import "CLLocation+YCLocation.h"
 #import <CoreLocation/CoreLocation.h>
 

@@ -1,0 +1,13 @@
+功能：     
+	1、集成了WebService网络请求，使用soap1.2，想使用soap1.1请按其标准修改createRequest方法；
+	2、集成了XML解析方式：google的GDataXMLNode 和 系统自带的NSXMLParser 方法
+
+使用说明：     
+	1. 将四个文件文件添加到工程中；     
+	2. 向工程中增加“libxml2.dylib”库；     
+	3. 在工程的“Build
+Settings”页中找到“Header Search Path”项，添加“/usr/include/libxml2”到其路径中
+	4、添加“GDataXMLNode.h”文件到任一头文件中，如工程能编译通过，则说明GDataXMLNode添加成功。
+	5、在Compiler Flags一列对GDataXMLNode.m加上-fno-objc-arc（表示禁止这个.m文件的ARC）
+
+

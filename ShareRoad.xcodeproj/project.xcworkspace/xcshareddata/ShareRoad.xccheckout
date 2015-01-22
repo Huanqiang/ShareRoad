@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>AA444E6A-28F5-4849-AA74-88774C1A0E19</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ShareRoad</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1AD5FC04C852327C4D019CA7952DC86A1DDBB46A</key>
+		<string>github.com:861645007/ShareRoad.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ShareRoad.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1AD5FC04C852327C4D019CA7952DC86A1DDBB46A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:861645007/ShareRoad.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1AD5FC04C852327C4D019CA7952DC86A1DDBB46A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1AD5FC04C852327C4D019CA7952DC86A1DDBB46A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ShareRoad</string>
+		</dict>
+	</array>
+</dict>
+</plist>

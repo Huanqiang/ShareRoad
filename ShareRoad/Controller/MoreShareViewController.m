@@ -47,6 +47,9 @@
     return platformArr.count;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 46;
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *cellIdentifier = @"MoreShareCell";
@@ -80,7 +83,7 @@
         [plat cancelAuthWithPlatformType];
         [mainTableView reloadData];
     }else {
-        [[ShareContentWithShareSDK shareInstance] shareContent:@"我正在使用“路况知音”APP" AndPublishImage:nil AndSharePlatformType:ShareTypeSinaWeibo AndDealWithData:^{
+        [plat shareContext:@"本路况信息来自“路况知音“APP的分享" AndPublishImage:nil AndDealWithData:^(){
             [mainTableView reloadData];
         }];
     }

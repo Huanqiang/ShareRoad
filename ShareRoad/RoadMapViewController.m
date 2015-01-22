@@ -174,9 +174,9 @@
     
     RoadInfo *roadInfo = [[RoadInfo alloc] init];
     roadInfo.coordinate = CLLocationCoordinate2DMake([[dic objectForKey:@"La"] floatValue], [[dic objectForKey:@"Lo"] floatValue]);
-    roadInfo.address = [NSString stringWithFormat:@"这是%@分享给您的路况信息\n地址：%@", [dic objectForKey:@"name"],[dic objectForKey:@"address"]];
+    roadInfo.address = [NSString stringWithFormat:@"这是%@分享给您的路况信息", [dic objectForKey:@"name"]];
     roadInfo.fileType = @"3";
-    roadInfo.fileName = @"APNS.txt";
+    roadInfo.fileName = [NSString stringWithFormat:@"地址：%@",[dic objectForKey:@"address"]];
     [baiduMapView setCenterCoordinate:roadInfo.coordinate animated:YES];
     [self addPointAnnotation:roadInfo];
 }
@@ -239,18 +239,15 @@
         UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
         imageView.frame = CGRectMake(0, actualsize.height, 160, 120 - actualsize.height);        
         [popView addSubview:imageView];
+        ((BMKPinAnnotationView*) annotationView).paopaoView = nil;
+        ((BMKPinAnnotationView*) annotationView).paopaoView = pView;
     }else if ([pathExtension isEqualToString:@"mp3"]) {
         annotationView.image = [UIImage imageNamed:@"Map_AnnotationVoice@2x"];
         popView.frame = CGRectMake(0, 0, 160, actualsize.height);
         pView.frame  = popView.frame;
-    }else {
-        ((BMKPinAnnotationView *)annotationView).pinColor = BMKPinAnnotationColorGreen;
-        popView.frame = CGRectMake(0, 0, 160, actualsize.height);
-        pView.frame  = popView.frame;
+        ((BMKPinAnnotationView*) annotationView).paopaoView = nil;
+        ((BMKPinAnnotationView*) annotationView).paopaoView = pView;
     }
-    
-    ((BMKPinAnnotationView*) annotationView).paopaoView = nil;
-    ((BMKPinAnnotationView*) annotationView).paopaoView = pView;
     
     annotationView.centerOffset = CGPointMake(0, -(annotationView.frame.size.height * 0.5));//不知道干什么用的
     annotationView.annotation = annotation;//绑定对应的标点经纬度
@@ -322,6 +319,7 @@
         shareRoadInfo.fileData = UIImageJPEGRepresentation(selectedImage, 0.50);   // 压缩图片，并转为 data
         shareRoadInfo.fileType = @"2";
         [self submitImage];
+        [self morePlatformShare: shareRoadInfo.fileData];
     }];
 }
 
@@ -343,6 +341,17 @@
             [self.view.window showHUDWithText:@"分享成功" Type:ShowPhotoYes Enabled:YES];
             break;
         }
+    }
+}
+
+- (void)morePlatformShare:(NSData *)imageData {
+    PlatformShareFactory *platformShareFactory = [[PlatformShareFactory alloc] init];
+    //微博分享
+    PlatformShare *plat = [platformShareFactory createPlatform:SinaWeibo];
+    if ([plat isAuthWithPlatformType]) {
+        [plat shareContext:@"本路况信息来自“路况知音“APP的分享" AndPublishImage:[UIImage imageWithData:imageData] AndDealWithData:^{
+            //分享成功操作
+        }];
     }
 }
 

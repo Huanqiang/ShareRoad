@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "ShareContentWithShareSDK.h"
 
+typedef void (^ dealWithShareContentDataBlock) ();
+
 typedef enum
 {
     SinaWeibo = 0,         /**< 新浪微博 */
@@ -25,5 +27,6 @@ PlatformShareType;
 - (void)cancelAuthWithPlatformType;          //退出平台
 - (NSString *)gainPlatformPersonName;        //获取平台上的用户名
 - (BOOL)isAuthWithPlatformType;              //判断是否授权
+- (void)shareContext:(NSString *)publishString AndPublishImage:(UIImage *)publishImage  AndDealWithData:(dealWithShareContentDataBlock )dateBlock;
 
 @end

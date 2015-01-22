@@ -150,6 +150,7 @@ static CustomToolClass *instnce;
 
 
 #pragma mark - 验证手机号码
+
 -(BOOL)validateMobile:(NSString* )mobileNumber {
     NSString *mobileStr = @"^((145|147)|(15[^4])|(17[6-8])|((13|18)[0-9]))\\d{8}$";
     NSPredicate *cateMobileStr = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",mobileStr];
@@ -163,8 +164,7 @@ static CustomToolClass *instnce;
 
 #pragma mark - 给我评分
 - (void)gotoGrade:(NSString *)appleID {
-    NSString *str = [NSString stringWithFormat:
-                     @"itms-apps://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=%d", [appleID intValue]];
+    NSString *str = [NSString stringWithFormat: @"itms-apps://itunes.apple.com/app/id%@",appleID];
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:str]];
 }
 

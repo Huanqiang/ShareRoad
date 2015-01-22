@@ -17,6 +17,9 @@
 #import "iflyMSC/IFlySpeechSynthesizerDelegate.h"
 #import "iflyMSC/IFlySpeechSynthesizer.h"
 
+#import "PlatformShare.h"
+#import "PlatformShareFactory.h"
+
 @interface RoadMapViewController : BaseViewController<BMKMapViewDelegate, BMKLocationServiceDelegate, BMKGeoCodeSearchDelegate, ShareRoadInfoDelegate, IFlySpeechSynthesizerDelegate, UIImagePickerControllerDelegate, AVAudioPlayerDelegate> {
     BMKLocationService *locationService;
     BMKGeoCodeSearch *geocodesearch;
@@ -33,9 +36,5 @@
 - (IBAction)startLocationWithDifferentType:(id)sender;
 - (IBAction)getRecording:(id)sender;
 - (IBAction)getCameraAndPhoto:(id)sender;
-
-
-
-
 
 @end

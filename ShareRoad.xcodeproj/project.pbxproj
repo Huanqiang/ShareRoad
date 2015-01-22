@@ -171,6 +171,11 @@
 		E6D237981A079544000AA86E /* PushConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6D237971A079544000AA86E /* PushConfig.plist */; };
 		E6D403301A05D41C00B5627F /* BaseNeedLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D4032F1A05D41C00B5627F /* BaseNeedLogInViewController.m */; };
 		E6D403321A05D8FB00B5627F /* setting_return.png in Resources */ = {isa = PBXBuildFile; fileRef = E6D403311A05D8FB00B5627F /* setting_return.png */; };
+		E6D871041A0C70A600CEA52D /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = E6D870FF1A0C70A600CEA52D /* launch.png */; };
+		E6D871051A0C70A600CEA52D /* launch1.png in Resources */ = {isa = PBXBuildFile; fileRef = E6D871001A0C70A600CEA52D /* launch1.png */; };
+		E6D871061A0C70A600CEA52D /* launch2.png in Resources */ = {isa = PBXBuildFile; fileRef = E6D871011A0C70A600CEA52D /* launch2.png */; };
+		E6D871071A0C70A600CEA52D /* launch4.png in Resources */ = {isa = PBXBuildFile; fileRef = E6D871021A0C70A600CEA52D /* launch4.png */; };
+		E6D871081A0C70A600CEA52D /* launch5.png in Resources */ = {isa = PBXBuildFile; fileRef = E6D871031A0C70A600CEA52D /* launch5.png */; };
 		E6DC3FED1A06724A00880B3B /* UpdatePersonPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6DC3FEC1A06724A00880B3B /* UpdatePersonPasswordViewController.m */; };
 		E6E7F8A819E6630900CF9510 /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E7F8A719E6630900CF9510 /* AboutUsViewController.m */; };
 		E6E7F8AE19E6633700CF9510 /* AddressShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E7F8AD19E6633700CF9510 /* AddressShareViewController.m */; };
@@ -466,6 +471,11 @@
 		E6D4032E1A05D41C00B5627F /* BaseNeedLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseNeedLogInViewController.h; path = Controller/BaseNeedLogInViewController.h; sourceTree = "<group>"; };
 		E6D4032F1A05D41C00B5627F /* BaseNeedLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseNeedLogInViewController.m; path = Controller/BaseNeedLogInViewController.m; sourceTree = "<group>"; };
 		E6D403311A05D8FB00B5627F /* setting_return.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting_return.png; sourceTree = "<group>"; };
+		E6D870FF1A0C70A600CEA52D /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
+		E6D871001A0C70A600CEA52D /* launch1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch1.png; sourceTree = "<group>"; };
+		E6D871011A0C70A600CEA52D /* launch2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch2.png; sourceTree = "<group>"; };
+		E6D871021A0C70A600CEA52D /* launch4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch4.png; sourceTree = "<group>"; };
+		E6D871031A0C70A600CEA52D /* launch5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch5.png; sourceTree = "<group>"; };
 		E6DC3FEB1A06724A00880B3B /* UpdatePersonPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UpdatePersonPasswordViewController.h; path = Controller/UpdatePersonPasswordViewController.h; sourceTree = "<group>"; };
 		E6DC3FEC1A06724A00880B3B /* UpdatePersonPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UpdatePersonPasswordViewController.m; path = Controller/UpdatePersonPasswordViewController.m; sourceTree = "<group>"; };
 		E6E7F8A619E6630900CF9510 /* AboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutUsViewController.h; path = Controller/AboutUsViewController.h; sourceTree = "<group>"; };
@@ -848,6 +858,11 @@
 		E67ED8FE19E562DA00E78EA8 /* Launch */ = {
 			isa = PBXGroup;
 			children = (
+				E6D870FF1A0C70A600CEA52D /* launch.png */,
+				E6D871001A0C70A600CEA52D /* launch1.png */,
+				E6D871011A0C70A600CEA52D /* launch2.png */,
+				E6D871021A0C70A600CEA52D /* launch4.png */,
+				E6D871031A0C70A600CEA52D /* launch5.png */,
 				E67ED86819E55E7500E78EA8 /* Default-568h@2x.png */,
 				E67ED86919E55E7500E78EA8 /* Default@2x.png */,
 				E67ED85E19E55E7500E78EA8 /* launch_1242.png */,
@@ -1344,7 +1359,7 @@
 						DevelopmentTeam = EYK6J4JA87;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -1392,6 +1407,8 @@
 				E67ED8CA19E55F2000E78EA8 /* Person_ModifyInfo@2x.png in Resources */,
 				E67ED84319E55B3A00E78EA8 /* Main.storyboard in Resources */,
 				E67ED8EC19E55F5400E78EA8 /* Speak_Voice1@2x.png in Resources */,
+				E6D871071A0C70A600CEA52D /* launch4.png in Resources */,
+				E6D871061A0C70A600CEA52D /* launch2.png in Resources */,
 				E67ED87419E55E7500E78EA8 /* alert_close.png in Resources */,
 				E67ED89519E55EBB00E78EA8 /* Map_AnnotationPicture.png in Resources */,
 				E6783E4919E6C7C2007DF9A2 /* HUD_NO.png in Resources */,
@@ -1415,6 +1432,7 @@
 				E6D403321A05D8FB00B5627F /* setting_return.png in Resources */,
 				E67ED8F619E55F7300E78EA8 /* getNewRoadInfoRing.wav in Resources */,
 				E67ED8CF19E55F2000E78EA8 /* Person_Top.png in Resources */,
+				E6D871081A0C70A600CEA52D /* launch5.png in Resources */,
 				E67ED87819E55E7500E78EA8 /* Default-568h@2x.png in Resources */,
 				E67ED8E019E55F3400E78EA8 /* Login_user.png in Resources */,
 				E67ED87619E55E7500E78EA8 /* sinaWeibo.png in Resources */,
@@ -1431,6 +1449,7 @@
 				E67ED8A719E55EBB00E78EA8 /* Map_showTrafficOff.png in Resources */,
 				E67ED89E19E55EBB00E78EA8 /* Map_showRoadVoice@2x.png in Resources */,
 				E67ED89719E55EBB00E78EA8 /* Map_AnnotationVoice.png in Resources */,
+				E6D871051A0C70A600CEA52D /* launch1.png in Resources */,
 				E67ED8C819E55F2000E78EA8 /* Person_Address@2x.png in Resources */,
 				E67ED8A319E55EBB00E78EA8 /* Map_FollowHeading.png in Resources */,
 				E67ED89D19E55EBB00E78EA8 /* Map_showRoadVoice.png in Resources */,
@@ -1454,6 +1473,7 @@
 				E67ED8A019E55EBB00E78EA8 /* satellite.png in Resources */,
 				E6783E4B19E6C7C2007DF9A2 /* HUD_YES.png in Resources */,
 				E67ED89F19E55EBB00E78EA8 /* 2dpicture.png in Resources */,
+				E6D871041A0C70A600CEA52D /* launch.png in Resources */,
 				E67ED8C919E55F2000E78EA8 /* Person_ModifyInfo.png in Resources */,
 				E67ED8DD19E55F3400E78EA8 /* Login_background@2x.png in Resources */,
 				E67ED8CB19E55F2000E78EA8 /* Person_SexBoy.png in Resources */,
@@ -1665,6 +1685,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: huanqiang wang (RE27TGSB78)";
 				DEFINES_MODULE = YES;
@@ -1702,6 +1723,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: huanqiang wang (RE27TGSB78)";
 				DEFINES_MODULE = YES;

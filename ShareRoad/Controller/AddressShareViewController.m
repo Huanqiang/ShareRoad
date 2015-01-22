@@ -50,7 +50,10 @@
     if (![phoneNumberTextField.text isEqualToString:@""]) {
         if (![phoneNumberTextField.text isEqualToString:[user gainUserPhone]]) {
             [self.view.window showHUDWithText:@"正在分享中..." Type:ShowLoading Enabled:YES];
-            NSMutableArray *personInfo = [[NSMutableArray alloc] initWithArray:@[@"userName", [user gainUserName], @"phoneNumber", phoneNumberTextField.text, @"longitude", [NSString stringWithFormat:@"%f", locatonCoor.longitude], @"latitude", [NSString stringWithFormat:@"%f", locatonCoor.latitude], @"detailAddress", locationAddress]];
+            
+            NSDictionary *userCoordinateDic = BMKConvertBaiduCoorFrom(locatonCoor, BMK_COORDTYPE_GPS);
+            CLLocationCoordinate2D locatonCoor1 = BMKCoorDictionaryDecode(userCoordinateDic);
+            NSMutableArray *personInfo = [[NSMutableArray alloc] initWithArray:@[@"userName", [user gainUserName], @"phoneNumber", phoneNumberTextField.text, @"longitude", [NSString stringWithFormat:@"%f", locatonCoor1.longitude], @"latitude", [NSString stringWithFormat:@"%f", locatonCoor1.latitude], @"detailAddress", locationAddress]];
             [self webServiceWithNet:@"ShareAddress" webServiceParmeters:personInfo success:^(NSDictionary *dic){
                 [self dealWithNetManageResult:[dic objectForKey:@"result"]];
             }];
@@ -107,11 +110,11 @@
     CLGeocoder *geoCoder = [[CLGeocoder alloc] init];
     [geoCoder reverseGeocodeLocation:locationGCJ completionHandler:^(NSArray *placemarks, NSError *error) {
         if(placemarks.count > 0) {
-            [self.view.window showHUDWithText:@"获取成功" Type:ShowPhotoYes Enabled:YES];
+//            [self.view.window showHUDWithText:@"获取成功" Type:ShowPhotoYes Enabled:YES];
             CLPlacemark *placemark = [placemarks objectAtIndex:0];
             locationAddress = placemark.name;
         }else {
-            [self.view.window showHUDWithText:@"获取失败" Type:ShowPhotoYes Enabled:YES];
+            [self.view.window showHUDWithText:@"获取地址失败" Type:ShowPhotoYes Enabled:YES];
         }
     }];
 }

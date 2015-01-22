@@ -10,6 +10,17 @@
 
 @implementation PlatformShare
 
+- (void)platformLogIn {}
+- (void)cancelAuthWithPlatformType{}
+- (NSString *)gainPlatformPersonName{
+    return @"";
+}
+- (BOOL)isAuthWithPlatformType{
+    return YES;
+}
+
+- (void)shareContext:(NSString *)publishString AndPublishImage:(UIImage *)publishImage  AndDealWithData:(dealWithShareContentDataBlock )dateBlock{}
+
 
 
 @end
